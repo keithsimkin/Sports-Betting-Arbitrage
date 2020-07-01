@@ -1,0 +1,20 @@
+{
+  "name": "arbitrageur",
+  "version": "1.0.0",
+  "description": "a web app for searching arbitrage betting opportunities in sport events globally",
+  "main": "server.js",
+  "scripts": {
+    "dev":"nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icepaigez/Sports-Betting-Arbitrage.git"
+  },
+  "author": "Tunde ODUGUWA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icepaigez/Sports-Betting-Arbitrage/issues"
+  },
+  "homepage": "https://github.com/icepaigez/Sports-Betting-Arbitrage#readme"
+}
