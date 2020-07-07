@@ -4,6 +4,7 @@ const axios = require('axios');
 require('dotenv').config();
 
 const utils = require("./utils/utils");
+const naijabet = require("./scrapers/naijabet").naijabetScraper;
 
 const headers = (function() {
 	const ua = utils.user_agent;
@@ -18,6 +19,9 @@ const headers = (function() {
 	const header_JSON = JSON.stringify(header)
 	return header_JSON;
 })();
+
+//naijabet()
+
 
 
 
