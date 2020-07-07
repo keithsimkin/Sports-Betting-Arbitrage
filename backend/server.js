@@ -4,7 +4,8 @@ const axios = require('axios');
 require('dotenv').config();
 
 const utils = require("./utils/utils");
-const naijabet = require("./scrapers/naijabet").naijabetScraper;
+const naijabet = require("./scrapers/naijabet/naijabet").naijabetScraper;
+const naijabetOdds = require("./scrapers/naijabet/naijabet").extractNaijaBetOdds;
 
 const headers = (function() {
 	const ua = utils.user_agent;
@@ -21,6 +22,7 @@ const headers = (function() {
 })();
 
 //naijabet()
+naijabetOdds()
 
 
 
