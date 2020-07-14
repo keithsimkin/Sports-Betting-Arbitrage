@@ -21,8 +21,9 @@ const headers = (function() {
 	return header_JSON;
 })();
 
-//naijabet()
-naijabetOdds()
+const teamNames = utils.getTeamNames
+//teamNames('https://footballdatabase.com/ranking').then(console.log)
+//naijabetOdds()
 
 
 
