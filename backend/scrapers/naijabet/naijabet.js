@@ -56,6 +56,23 @@ async function naijabetScraper() {
 		//click on the selector button that takes you to the actual matches for the selected league
 		await page.waitForSelector("#leagues_count_container > a");
 		await page.$eval("#leagues_count_container > a", element => element.click())
+		await page.waitFor(2000)
+		let gameHeadings = await page.$$eval(".s_title_ev", elements => {
+			//this is an array of game headings elements to eventually return e.g. Soccer >> England >> FA Cup
+			let headings = []
+			elements.forEach(element => {
+				let heading = []
+				let headingData = element.querySelector('table > tbody > tr > td:nth-child(1) > div').children //an array of anchor tags with heading text
+				for (let item of headingData) {
+					if (item.innerText !== "") {
+						heading.push(item.innerText)
+					}
+				}
+				headings.push(heading)
+			})
+			return headings;
+		})
+		
 
 		//TEST ENDS
 
