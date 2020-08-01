@@ -342,7 +342,7 @@ function alterType(array) {
 //db.select().table('nigeria').then(console.log)
 
 
-//throwaway scripts
+//throwaway scripts ======================================================
 //await page.setRequestInterception(true); - put this before page.goto function
 // page.on('request', async function(request) {
 // 		  const headers = await request.headers();
@@ -353,6 +353,22 @@ function alterType(array) {
 // 		  }
 // 		  console.log(headers)
 // 		});
+
+//extract the relevant odds and save in a database for arbitrage checking
+ // function extractNaijaBetOdds() {
+ // 	let oddsData = fs.readFileSync('./scrapers/naijabet/naijabetlocal.html', 'utf8')
+ // 	try {
+ // 		const document = parse(oddsData)
+ // 		let test = document.querySelector('.b-bet-grid__even')
+ // 		let h = []
+ // 		test.childNodes.forEach(i => {
+ // 			h.push(i.text)
+ // 		})
+ // 		console.log(h)
+ // 	} catch(err) {
+ // 		console.log('an error occurred in the local scrapped naijabet parser function', err)
+ // 	}
+ // }
 
 exports.user_agent = user_agent;
 exports.getTeamNames = getTeamNames;

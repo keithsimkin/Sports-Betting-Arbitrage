@@ -1,9 +1,11 @@
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const randomUA = require("puppeteer-extra-plugin-anonymize-ua");
+
+const db = require("../../database/db");
 //const blockResources = require("puppeteer-extra-plugin-block-resources");
-const fs = require("fs");
-const { parse } = require("node-html-parser");
+// const fs = require("fs");
+// const { parse } = require("node-html-parser");
 
 puppeteer.use(StealthPlugin());
 puppeteer.use(randomUA());
@@ -55,62 +57,20 @@ async function naijabetScraper() {
 
 		//TEST STARTS=============================================================
 		let league = await page.$$eval("div[class=cover_leagues_cell_contry]", element => {
-			let england = element[0].children[0].children[0].children[1].children[0]
-			england.click()
+			let country = element[9].children[0].children[0].children[1].children[0]
+			country.click()
 		})
 		//click on the selector button that takes you to the actual matches for the selected league
 		await page.waitForSelector("#leagues_count_container > a");
 		await page.$eval("#leagues_count_container > a", element => element.click())
 		await page.waitFor(2000)
 
-		let gameHeadings = await page.$$eval(".s_title_ev", elements => {
-			//this is an array of game headings elements to eventually return e.g. Soccer >> England >> FA Cup
-			let headings = []
-			elements.forEach(element => {
-				let heading = []
-				let headingData = element.querySelector('table > tbody > tr > td:nth-child(1) > div').children //an array of anchor tags HTML Collection
-				for (let item of headingData) {
-					if (item.innerText !== "") {
-						heading.push(item.innerText)
-					}
-				}
-				headings.push(heading)
-			})
-			return headings;
-		})
+		let gameGroup;
 
-		let gameMarkets = await page.$$eval(".b-bet-grid__bets", elements => {
-			let allData = []
-			elements.forEach(element => {
-				let gamedate_markets = []
-				let dateAndMarkets = element.children[1].children
-				for (let item of dateAndMarkets) {
-					if (item.innerText !== "") {
-						gamedate_markets.push(item.innerText)
-					}
-				}
-				gamedate_markets.pop()
-				allData.push({gamedate_markets})
-			})
-			return allData;
-		})
 		
-		let gameOdds = await page.$$eval(".market_", elements => {
-			let allData = []
-			elements.forEach(element => {
-				let odds = []
-				for (let item of element.children) {
-					odds.push(item.innerText)
-				}
-				odds.pop()
-				allData.push({odds})
-			})
-			return allData;
-		})
+		//db.select('*').from('naijabet_3way').then(console.log)
 		
-		console.log(gameHeadings)
-		console.log(gameMarkets)
-		console.log(gameOdds)
+		
 
 		//TEST ENDS======================================================
 
@@ -192,21 +152,6 @@ async function naijabetScraper() {
 	}
 }
 
-//extract the relevant odds and save in a database for arbitrage checking
- // function extractNaijaBetOdds() {
- // 	let oddsData = fs.readFileSync('./scrapers/naijabet/naijabetlocal.html', 'utf8')
- // 	try {
- // 		const document = parse(oddsData)
- // 		let test = document.querySelector('.b-bet-grid__even')
- // 		let h = []
- // 		test.childNodes.forEach(i => {
- // 			h.push(i.text)
- // 		})
- // 		console.log(h)
- // 	} catch(err) {
- // 		console.log('an error occurred in the local scrapped naijabet parser function', err)
- // 	}
- // }
+
 
 exports.naijabetScraper = naijabetScraper;
-//exports.extractNaijaBetOdds = extractNaijaBetOdds;
