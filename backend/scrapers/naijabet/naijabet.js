@@ -57,12 +57,13 @@ async function naijabetScraper() {
 		await page.waitForSelector("#leagues_count_container > a");
 		await page.$eval("#leagues_count_container > a", element => element.click())
 		await page.waitFor(2000)
+
 		let gameHeadings = await page.$$eval(".s_title_ev", elements => {
 			//this is an array of game headings elements to eventually return e.g. Soccer >> England >> FA Cup
 			let headings = []
 			elements.forEach(element => {
 				let heading = []
-				let headingData = element.querySelector('table > tbody > tr > td:nth-child(1) > div').children //an array of anchor tags with heading text
+				let headingData = element.querySelector('table > tbody > tr > td:nth-child(1) > div').children //an array of anchor tags HTML Collection
 				for (let item of headingData) {
 					if (item.innerText !== "") {
 						heading.push(item.innerText)
@@ -72,7 +73,33 @@ async function naijabetScraper() {
 			})
 			return headings;
 		})
-		
+
+		let gameData = await page.$$eval(".b-bet-grid__bets", elements => {
+			let allData = []
+			elements.forEach(element => {
+				let gamedate_markets = []
+				let odds = []
+
+				let dateAndMarkets = element.children[1].children
+				for (let item of dateAndMarkets) {
+					if (item.innerText !== "") {
+						gamedate_markets.push(item.innerText)
+					}
+				}
+				gamedate_markets.pop()
+
+				// let gameAndOdds = element.querySelector('div > div:nth-child(2) > div > table > tbody > tr.b-bet-grid__even.market_').children
+				// for (let item of gameAndOdds) {
+				// 	if (item.innerText !== "") {
+				// 		odds.push(item.innerText)
+				// 	}
+				// }
+				// odds.pop()
+				allData.push({gamedate_markets})
+			})
+			return allData;
+		})
+		console.log(gameData)
 
 		//TEST ENDS
 
