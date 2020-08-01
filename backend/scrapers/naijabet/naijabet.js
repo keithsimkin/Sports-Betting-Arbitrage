@@ -65,7 +65,21 @@ async function naijabetScraper() {
 		await page.$eval("#leagues_count_container > a", element => element.click())
 		await page.waitFor(2000)
 
-		let gameGroup;
+		let gameGroup = await page.$eval('.events_contein', element => {
+			let headingCount = []
+			for (let item of element.children) {
+				headingCount.push(item.tagName)
+			}
+
+			let headingIndex = headingCount.reduce((acc, ci, idx) => {
+				if (ci === 'H1') {
+					acc.push(idx)
+				}
+				return acc;
+			}, [])
+			return headingIndex
+		})
+		// console.log(gameGroup)
 
 		
 		//db.select('*').from('naijabet_3way').then(console.log)
