@@ -48,7 +48,12 @@ async function naijabetScraper() {
 		let allLeagues = await page.$$eval("div[class=cover_leagues_cell_contry]", element => element)
 		let leagueCount = allLeagues.length //an array of empty objects
 
-		//TEST STARTS
+
+
+
+
+
+		//TEST STARTS=============================================================
 		let league = await page.$$eval("div[class=cover_leagues_cell_contry]", element => {
 			let england = element[0].children[0].children[0].children[1].children[0]
 			england.click()
@@ -103,8 +108,16 @@ async function naijabetScraper() {
 			return allData;
 		})
 		
+		console.log(gameHeadings)
+		console.log(gameMarkets)
+		console.log(gameOdds)
 
-		//TEST ENDS
+		//TEST ENDS======================================================
+
+
+
+
+
 
 		// let indexes = []
 		// for (let i = 0; i < leagueCount; i++) { 
