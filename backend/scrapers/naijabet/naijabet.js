@@ -78,7 +78,7 @@ async function naijabetScraper() {
 		//  //click on the selector button that takes you to the actual matches for the selected league
 		// 	await page.$eval("#leagues_count_container > a", element => element.click())
 		// 	//wait for a few seconds before proceeding, to act human
-		// }
+		// } 
 		
 		
 	} catch(err) {

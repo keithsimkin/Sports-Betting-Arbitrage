@@ -8,4 +8,4 @@ const naijabet = require("./scrapers/naijabet/naijabet").naijabetScraper;
 //const naijabetOdds = require("./scrapers/naijabet/naijabet").extractNaijaBetOdds;
 const db = require("./database/db")
 
-//naijabet()
+//naijabet() 
