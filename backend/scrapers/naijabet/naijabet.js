@@ -30,6 +30,18 @@ function shuffle(array) {
   return array;
 }
 
+// function arrayChunks(dataArray, indexArray) {
+// 	let groups = []
+// 	let a = 0
+// 	for (let i = 0; i < indexArray.length; i++) {
+// 		let b = a + 1
+// 		groups.push(dataArray.slice(indexArray[a], indexArray[b]))
+// 		a++
+// 	}
+// 	return groups;
+// }
+
+
 async function naijabetScraper() {
 	try {
 		const browser = await puppeteer.launch({
@@ -57,29 +69,45 @@ async function naijabetScraper() {
 
 		//TEST STARTS=============================================================
 		let league = await page.$$eval("div[class=cover_leagues_cell_contry]", element => {
-			let country = element[9].children[0].children[0].children[1].children[0]
+			let country = element[8].children[0].children[0].children[1].children[0]
 			country.click()
 		})
 		//click on the selector button that takes you to the actual matches for the selected league
 		await page.waitForSelector("#leagues_count_container > a");
 		await page.$eval("#leagues_count_container > a", element => element.click())
 		await page.waitFor(2000)
+		await page.exposeFunction("arrayChunks", arrayChunks);
 
-		let gameGroup = await page.$eval('.events_contein', element => {
+		let gameGroup = await page.$eval('.events_contein', async element => {
 			let headingCount = []
 			for (let item of element.children) {
 				headingCount.push(item.tagName)
 			}
 
+			//this returns the indexes of all headings for the league
 			let headingIndex = headingCount.reduce((acc, ci, idx) => {
 				if (ci === 'H1') {
 					acc.push(idx)
 				}
 				return acc;
 			}, [])
-			return headingIndex
+			
+			let elementArray = Array.from(element.children) //converts the HTMLCollection to a regular array
+			
+			//split the array into logical chunks exactly as arranged on the website 
+			let elementGroups = []
+			let a = 0
+			for (let i = 0; i < headingIndex.length; i++) {
+				let b = a + 1
+				elementGroups.push(elementArray.slice(headingIndex[a], headingIndex[b]))
+				a++
+			}
+
+			let group1 = await elementGroups[0]
+			let heading = await group1.map(i => i.outerText)
+			return heading
 		})
-		// console.log(gameGroup)
+		console.log(gameGroup)
 
 		
 		//db.select('*').from('naijabet_3way').then(console.log)
