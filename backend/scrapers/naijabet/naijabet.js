@@ -76,9 +76,9 @@ async function naijabetScraper() {
 		await page.waitForSelector("#leagues_count_container > a");
 		await page.$eval("#leagues_count_container > a", element => element.click())
 		await page.waitFor(2000)
-		await page.exposeFunction("arrayChunks", arrayChunks);
+		//await page.exposeFunction("arrayChunks", arrayChunks);
 
-		let gameGroup = await page.$eval('.events_contein', async element => {
+		let games = await page.$eval('.events_contein', async element => {
 			let headingCount = []
 			for (let item of element.children) {
 				headingCount.push(item.tagName)
@@ -94,7 +94,7 @@ async function naijabetScraper() {
 			
 			let elementArray = Array.from(element.children) //converts the HTMLCollection to a regular array
 			
-			//split the array into logical chunks exactly as arranged on the website 
+			//split the array into logical chunks exactly as arranged on the naijabet website 
 			let elementGroups = []
 			let a = 0
 			for (let i = 0; i < headingIndex.length; i++) {
@@ -102,12 +102,35 @@ async function naijabetScraper() {
 				elementGroups.push(elementArray.slice(headingIndex[a], headingIndex[b]))
 				a++
 			}
+			
+			let leagueHeadings = []
+			let leagueGames = []
+			elementGroups.forEach(group => { //group is an array of h1 and divs, group[0] is always h1
+				let heading = []
+				let headingData = group[0].querySelector('table > tbody > tr > td:nth-child(1) > div').children //an array of anchor tags HTMLCollection
+				for (let item of headingData) {
+					heading.push(item.innerText)
+				}
+				heading = heading.filter(i => i !== "") // e.g. [ 'Soccer', 'Sweden', 'Allsvenskan' ]
+				leagueHeadings.push(heading)
 
-			let group1 = await elementGroups[0]
-			let heading = await group1.map(i => i.outerText)
-			return heading
+				let oddsGroups = group.slice(1, ) //returns an array of divs
+				let leagueGamesDates = []
+				oddsGroups.forEach(div => {
+					let gamedate_markets = [] //date and markets 
+					let dateAndMarkets = div.querySelector(".b-bet-grid__bets").children[1].children
+					for (let item of dateAndMarkets) {
+						gamedate_markets.push(item.innerText)
+					}
+					gamedate_markets = gamedate_markets.filter(i => i !== '')
+					leagueGamesDates.push(gamedate_markets)
+				})
+				leagueGames.push(leagueGamesDates)
+			})
+		
+			return leagueGames;
 		})
-		console.log(gameGroup)
+		console.log(games)
 
 		
 		//db.select('*').from('naijabet_3way').then(console.log)
