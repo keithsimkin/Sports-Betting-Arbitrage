@@ -115,17 +115,38 @@ async function naijabetScraper() {
 				leagueHeadings.push(heading)
 
 				let oddsGroups = group.slice(1, ) //returns an array of divs
-				let leagueGamesDates = []
+				let leagueGamesGroup = []
+
 				oddsGroups.forEach(div => {
 					let gamedate_markets = [] //date and markets 
-					let dateAndMarkets = div.querySelector(".b-bet-grid__bets").children[1].children
+					let dateAndMarkets = div.querySelector(".b-bet-grid__bets").children[1].children //contains date and markets
 					for (let item of dateAndMarkets) {
 						gamedate_markets.push(item.innerText)
 					}
 					gamedate_markets = gamedate_markets.filter(i => i !== '')
-					leagueGamesDates.push(gamedate_markets)
+
+					let gameOdds = div.querySelectorAll(".b-bet-grid__bets").children
+					let checkOdds = [] //select only the table rows that have odds data in the div
+					for (let item of gameOdds) {
+						if (item.hasAttribute("data-event_id")) {
+							checkOdds.push(item)
+						}
+					}
+
+					let rows = []
+					if (checkOdds !== "") {
+						checkOdds.forEach(row => {
+							let rowData = []
+							for (let item of row.children) {
+								rowData.push(item.innerText)
+							}
+							rowData.pop()
+						})
+						rows.push(rowData)
+					}
+					leagueGamesGroup.push({gamedate_markets, rows})
 				})
-				leagueGames.push(leagueGamesDates)
+				leagueGames.push(leagueGamesGroup)
 			})
 		
 			return leagueGames;
@@ -220,3 +241,55 @@ async function naijabetScraper() {
 
 
 exports.naijabetScraper = naijabetScraper;
+
+//SCRAP
+
+// let gameHeadings = await page.$$eval(".s_title_ev", elements => {
+// 			//this is an array of game headings elements to eventually return e.g. Soccer >> England >> FA Cup
+// 			let headings = []
+// 			elements.forEach(element => {
+// 				let heading = []
+// 				let headingData = element.querySelector('table > tbody > tr > td:nth-child(1) > div').children //an array of anchor tags HTML Collection
+// 				for (let item of headingData) {
+// 					if (item.innerText !== "") {
+// 						heading.push(item.innerText)
+// 					}
+// 				}
+// 				headings.push(heading)
+// 			})
+// 			return headings;
+// 		})
+
+// 		let gameMarkets = await page.$$eval(".b-bet-grid__bets", elements => {
+// 			let allData = []
+// 			elements.forEach(element => {
+// 				let gamedate_markets = []
+// 				let dateAndMarkets = element.children[1].children
+// 				for (let item of dateAndMarkets) {
+// 					if (item.innerText !== "") {
+// 						gamedate_markets.push(item.innerText)
+// 					}
+// 				}
+// 				gamedate_markets.pop()
+// 				allData.push({gamedate_markets})
+// 			})
+// 			return allData;
+// 		})
+		
+// 		let gameOdds = await page.$$eval(".market_", elements => {
+// 			let allData = []
+// 			elements.forEach(element => {
+// 				let odds = []
+// 				for (let item of element.children) {
+// 					odds.push(item.innerText)
+// 				}
+// 				odds.pop()
+// 				allData.push({odds})
+// 			})
+// 			return allData;
+// 		})
+
+		// console.log(gameHeadings)
+		// console.log(gameMarkets)
+		// console.log(gameOdds)
+		//gameHeadings.forEach(array => array.shift()) //removes the first item-'Soccer' from the array and leaves the country and league
