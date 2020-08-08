@@ -7,4 +7,4 @@ const utils = require("./utils/utils");
 const naijabet = require("./scrapers/naijabet/naijabet").naijabetScraper;
 //const db = require("./database/db")
 
-//naijabet() 
+//naijabet()  
