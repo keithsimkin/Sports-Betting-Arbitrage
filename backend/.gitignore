@@ -7,3 +7,4 @@ controllers/v0/scrapers/betking/betking.js
 controllers/v0/utils
 controllers/v0/dbops.js
 /config/config.js
+users

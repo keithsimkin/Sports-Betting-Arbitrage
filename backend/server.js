@@ -1,18 +1,33 @@
-//const puppeteer = require('puppeteer');
-//var stringSimilarity = require('string-similarity');
-//const fs = require("fs");
-//const axios = require('axios');
+"use strict";
+const express = require("express");
+const bodyParser = require('body-parser');
 require('dotenv').config();
 
-// const utils = require("./utils/utils");
-const naijabet = require("./controllers/v0/scrapers/naijabet/naijabet");
-const bet9ja = require("./controllers/v0/scrapers/bet9ja/bet9ja");
+const dbops = require("./controllers/v0/dbops");
+const { IndexRouter } = require("./controllers/v0/index.router");
+
+const server = express();
+const PORT = process.env.PORT || 4000;
+
+server.use(bodyParser.json());
+server.use('/api/v0/', IndexRouter);
 
 
+//console.log(dbops())
 
-//naijabet().then(console.log) 
-//bet9ja().then(console.log) 
-//bet9ja()
+server.get('/', (req, res) => {
+	res.send('/api/v0')
+});
+
+server.post('/', (req, res) => {
+	res.send('/api/v0')
+})
+
+server.listen(PORT, () => {
+	console.log(`the arb server is listening on port ${PORT}`)
+});
+
+
 
 
 
