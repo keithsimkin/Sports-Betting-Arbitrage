@@ -1,17 +1,20 @@
-const puppeteer = require('puppeteer');
-const fs = require("fs");
-const axios = require('axios');
+//const puppeteer = require('puppeteer');
+//var stringSimilarity = require('string-similarity');
+//const fs = require("fs");
+//const axios = require('axios');
 require('dotenv').config();
 
-const utils = require("./utils/utils");
-const naijabet = require("./scrapers/naijabet/naijabet").naijabetScraper;
-const db = require("./database/db")
+// const utils = require("./utils/utils");
+const naijabet = require("./controllers/v0/scrapers/naijabet/naijabet");
+const bet9ja = require("./controllers/v0/scrapers/bet9ja/bet9ja");
 
 
-//select all from table where game equals game, filtered by time, return most recent
+
 //naijabet().then(console.log) 
+//bet9ja().then(console.log) 
+//bet9ja()
 
 
 
 
-//db('naijabet_3way').where('game', 'Denmark vs Belgium').then(console.log)
+

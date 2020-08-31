@@ -1,5 +1,9 @@
 .env
 /node_modules
 /database
-/scrapers
-/utils
+controllers/v0/scrapers/bet9ja/bet9ja.js
+controllers/v0/scrapers/naijabet/naijabet.js
+controllers/v0/scrapers/betking/betking.js
+controllers/v0/utils
+controllers/v0/dbops.js
+/config/config.js
