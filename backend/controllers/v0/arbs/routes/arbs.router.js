@@ -7,7 +7,7 @@ const db = require("../../../../knex");
 
 
 router.get('/', (req, res) => {
-	res.status(200).send('welcome to qutech')
+	res.status(200).send('welcome to liquirock')
 });
 
 
