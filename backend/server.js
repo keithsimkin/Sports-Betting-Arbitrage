@@ -19,6 +19,8 @@ server.use('/api/v0/', IndexRouter);
 //getThreewayArbs().then(console.log)
 //checkArbs().then(console.log)
 
+//the function to initiate table creation and scraper should be an IFFE that runs
+//continuously
 
 
 
