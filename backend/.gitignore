@@ -7,4 +7,8 @@ controllers/v0/scrapers/betking/betking.js
 controllers/v0/utils
 controllers/v0/dbops.js
 /config/config.js
-users
+controllers/v0/users/models
+controllers/v0/users/routes/user.auth.js
+controllers/v0/users/routes/user.router.js
+controllers/v0/arbs/routes/arbs.router.js
+controllers/v0/root/models/ROOT_DB_TABLES_MODEL.js
