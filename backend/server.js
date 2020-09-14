@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const getThreewayArbs = require("./controllers/v0/dbops");
+const scrapeDataAndGetArbs = require("./controllers/v0/dbops");
 const { IndexRouter } = require("./controllers/v0/index.router");
 
 const server = express();
@@ -15,7 +15,7 @@ server.use('/api/v0/', IndexRouter);
 
 
 //getThreewayArbs().then(res => console.log(res.rows[0]))
-//getThreewayArbs(['bet9ja_3way', 'naijabet_3way']).then(console.log)
+//
 //getThreewayArbs().then(console.log)
 //checkArbs().then(console.log)
 
