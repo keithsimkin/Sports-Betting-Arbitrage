@@ -1,10 +1,12 @@
 import React from "react";
+import SearchBar from "./SearchBar/SearchBar";
 
 const Header = () => {
 	return (
 		<div>
+			<SearchBar />
 			{
-				// <SearchBar />
+				// 
 				// <UserProfile />
 					}
 		</div>
