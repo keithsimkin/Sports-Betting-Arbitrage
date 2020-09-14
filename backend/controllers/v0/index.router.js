@@ -7,7 +7,7 @@ const { ArbsRouter } = require("./arbs/routes/arbs.router");
 
 router.use('/arbs', ArbsRouter);
 
-router.get('/', (req, res) => {
+router.get('/', (req, res) => { 
 	res.send('v0');
 });
 
