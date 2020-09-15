@@ -16,6 +16,7 @@
 .searchbar {
 	margin-left: 20px;
 	/*border: 1px solid green;*/
+	width: 400px;
 }
 
 .user {
