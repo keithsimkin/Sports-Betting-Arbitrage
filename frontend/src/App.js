@@ -9,7 +9,7 @@ function App() {
         
       {
         // 
-        //     <TopBanner />
+        //     <Banner />
         //     <Logo />
         //     <CardHolder />
         //     <SideNav />
