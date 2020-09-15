@@ -1,5 +1,18 @@
-.footer {
-	border: 1px solid black;
-	height: 10vh;
-	max-width: 100%;
+@media screen and (max-width: 513px) {
+	.footer {
+		border: 1px solid black;
+		height: 8vh;
+		max-width: 100%;
+		bottom: 0px;
+		margin: 0px;
+		width: 100%;
+		position: fixed;
+	}	
 }
+
+@media screen and (min-width: 514px) {
+	.footer {
+		display: none;
+	}
+}
+
