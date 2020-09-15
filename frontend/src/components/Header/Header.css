@@ -1,13 +1,9 @@
 .navbar {
 	border: 1px solid black;
 	padding: 10px;
-	height: 50px;
 	display: flex;
 }
 
-.logo {
-	/*border: 1px solid green;*/
-}
 
 .logo:hover {
 	cursor: pointer;
@@ -15,12 +11,10 @@
 
 .searchbar {
 	margin-left: 20px;
-	/*border: 1px solid green;*/
 	width: 400px;
 }
 
 .user {
-	/*border: 1px solid green;*/
 	margin-left: auto;
 }
 
