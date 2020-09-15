@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar/SearchBar";
 import UserProfile from "./UserProfile/UserProfile";
+import Logo from "./Logo/Logo";
 import "./Header.css";
 
 const Header = () => {
@@ -8,7 +9,9 @@ const Header = () => {
 		<div>
 			<header class="box">
 		        <nav>
-		          <a href="#" className="logo">Logo</a>
+		          <div className="logo">
+		          	<Logo />
+		          </div>
 		          <div className="searchbar">
 		          	<SearchBar />
 		          </div>
