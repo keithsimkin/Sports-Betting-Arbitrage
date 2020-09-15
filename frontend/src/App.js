@@ -1,13 +1,14 @@
 import React from 'react';
-//import Header from "./components/Header/Header";
+import Header from "./components/Header/Header";
 import "./App.css";
 
 function App() {
   return (
     <div className="container">
+      <Header />
         
       {
-        // <Header />
+        // 
         //     <TopBanner />
         //     <Logo />
         //     <CardHolder />
