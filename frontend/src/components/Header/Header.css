@@ -23,5 +23,10 @@
 }
 
 @media screen and (min-width: 513px) {
-	
+	header {
+		top: 0px;
+		margin: 0px;
+		width: 100%;
+		position: fixed;
+	}
 }
