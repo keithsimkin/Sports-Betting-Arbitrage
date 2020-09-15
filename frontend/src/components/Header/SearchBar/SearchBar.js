@@ -3,7 +3,7 @@ import React from "react";
 const SearchBar = () => {
 	return (
 		<div>
-			<input type="text" name="" placeholder="Search Arbs for specific games"/>
+			<input type="search" name="" placeholder="Search for arbs"/>
 		</div>
 	)
 }

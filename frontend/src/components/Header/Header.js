@@ -7,20 +7,19 @@ import "./Header.css";
 const Header = () => {
 	return (
 		<div>
-			<header class="box">
-		        <nav>
+			<header>
+		        <nav class="navbar">
 		          <div className="logo">
 		          	<Logo />
 		          </div>
 		          <div className="searchbar">
 		          	<SearchBar />
 		          </div>
-		          <a href="#">Our Team</a>
+		          <div className="user">
+		          	<UserProfile />
+		          </div>
 		        </nav>
-	      </header>
-			{//
-						//<UserProfile />
-					}
+	      	</header>
 		</div>
 	)
 }
