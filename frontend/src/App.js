@@ -12,7 +12,7 @@ function App() {
       {
         // 
         //     
-        //     <Logo />
+        //  
         //     <CardHolder />
         //     <SideNav />
           }
