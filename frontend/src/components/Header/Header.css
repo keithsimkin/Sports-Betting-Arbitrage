@@ -8,6 +8,9 @@ header {
 	display: flex;
 }
 
+.logo {
+	width: 100%;
+}
 
 .logo:hover {
 	cursor: pointer;
@@ -16,7 +19,7 @@ header {
 .searchbar {
 	margin-left: 20px;
 	width: 400px;
-}
+} 
 
 .user {
 	margin-left: auto;
@@ -30,7 +33,7 @@ header {
 	header {
 		top: 0px;
 		margin: 0px;
-		width: 100%;
+		max-width: 100%;
 		position: fixed;
 	}
 }

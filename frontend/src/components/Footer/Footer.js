@@ -3,10 +3,10 @@ import "./footer.css"
 
 const Footer = () => {
 	return(
-		<div className="footer">
+		<footer className="footer">
 			Footer
-		</div>
+		</footer>
 	)
-};
+}; 
 
 export default Footer;

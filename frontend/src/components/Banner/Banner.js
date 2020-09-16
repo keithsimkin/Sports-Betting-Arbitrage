@@ -3,9 +3,9 @@ import "./banner.css"
 
 const Banner = () => {
 	return(
-		<div className="banner">
+		<section className="banner">
 			Banner
-		</div>
+		</section>
 	)
 };
 

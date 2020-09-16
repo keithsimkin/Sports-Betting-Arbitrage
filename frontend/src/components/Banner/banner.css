@@ -2,7 +2,7 @@
 	border: 1px solid black;
 	height: 40vh;
 	margin-top: 5px;
-	max-width: 100%;
+	width: 100%;
 }
 
 @media screen and (min-width: 513px) {

@@ -2,7 +2,7 @@
 	.footer {
 		border: 1px solid black;
 		height: 8vh;
-		max-width: 100%;
+		width: 100%;
 		bottom: 0px;
 		margin: 0px;
 		width: 100%;
@@ -15,4 +15,4 @@
 		display: none;
 	}
 }
-
+ 

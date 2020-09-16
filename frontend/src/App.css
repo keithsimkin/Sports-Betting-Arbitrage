@@ -3,3 +3,7 @@ html, body {
 	padding: 0px;
 	height: 100%;
 }
+
+.container {
+	border: 1px solid red;
+}

@@ -4,18 +4,9 @@ import "./cardholder.css";
 
 const CardHolder = ({ arbGames }) => {
 	return(
-		<div className="cardholder">
+		<section className="cardholder">
 			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			<Card />
-			 {
-			 	//arbGames.map(obj => <Card />)
-			 }
-		</div>
+		</section>
 	)
 };
 
