@@ -20,6 +20,13 @@ const Card = ({ id, game, game_date, game_time, arb_combination, arb_received })
 	return(
 		<div className="card">
 			This is a card
+			This is a card
+			This is a card
+			This is a card
+			This is a card
+			This is a card
+			This is a card
+			This is a card
 		</div>
 	)
 };
