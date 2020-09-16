@@ -20,10 +20,12 @@ class App extends Component {
         <div className="container">
           <Header />
           <Banner />
-          <CardHolder arbs={arbGames}/>
           <Footer />
+          <CardHolder arbs={arbGames}/>
           {
-          //   
+          //    
+          //
+          //
           //   //     <SideNav />
               }
         </div>

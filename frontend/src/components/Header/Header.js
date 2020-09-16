@@ -10,7 +10,7 @@ const Header = () => {
 		        <nav className="navbar">
 		          <div className="logo">
 		          	<Logo />
-		          </div>
+		          </div> 
 		          <div className="searchbar">
 		          	<SearchBar />
 		          </div> 
