@@ -3,6 +3,13 @@ html, body {
 	padding: 0px;
 	height: 100%;
 }
+body {
+	font-size: 14px;
+	line-height: 1.4285;
+}
 
+.container {
+	font-family: Arial;
+}
 
 
