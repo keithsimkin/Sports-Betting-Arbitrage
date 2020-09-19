@@ -10,7 +10,7 @@ const extractGames = (str) => {
 		strArr = str.split(" vs ")
 		return strArr;
 	} else if (str.includes(" v ")){ 
-		strArr = str.split(" v ")
+		strArr = str.split(" v ") 
 		return strArr; 
 	}
 }
@@ -25,7 +25,7 @@ const Card = ({ id, game, game_date, game_time, arb_combination, arb_received })
 						<td className="profit title">
 							<div><span>7.69%</span></div>
 						</td>
-						<td className="game title" colspan="7">
+						<td className="game title" colspan="">
 							<span>Alcorcon vs Tenerife</span>
 						</td>
 						<td className="market title">

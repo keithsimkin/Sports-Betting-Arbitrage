@@ -4,14 +4,14 @@ import "./cardholder.css";
 
 const CardHolder = ({ arbGames }) => {
 	return(
-		<section className="cardholder">
-			<table>
+		<section id="parent_holder">
+			<table id="cardholder">
 				<thead> 
-					<tr className="header">
+					<tr className="header"> 
 						<th className="arb">
 							<span>Arb</span>
 						</th>
-						<th className="game">
+						<th className="">
 							<span>Game</span>
 						</th>
 						<th className="market">
