@@ -6,14 +6,26 @@ const CardHolder = ({ arbGames }) => {
 	return(
 		<section className="cardholder">
 			<table>
-				<thead>
-					<tr>
-						<th>Arb</th>
-						<th>Game</th>
-						<th>Market</th>
-						<th>Bet1</th>
-						<th>Bet2</th>
-						<th>Bet3</th>				
+				<thead> 
+					<tr className="header">
+						<th className="arb">
+							<span>Arb</span>
+						</th>
+						<th className="game">
+							<span>Game</span>
+						</th>
+						<th className="market">
+							<span>Market</span>
+						</th>
+						<th className="bet1">
+							<span>Bet1</span>
+						</th>
+						<th className="bet2">
+							<span>Bet2</span>
+						</th>
+						<th className="bet3">
+							<span>Bet3</span>
+						</th>				
 					</tr>
 				</thead>
 			</table>

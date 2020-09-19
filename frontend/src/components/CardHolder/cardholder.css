@@ -9,12 +9,40 @@
 table {
 	width: 100%;
 	overflow: hidden;
+	border-spacing: 0;
+	border-collapse: collapse;
 	background-color: transparent;
 }
+
+thead {
+	background-color: #fff;
+	border-bottom: 1px solid #000;
+	font-size: 16px;
+}
+
+th {
+	vertical-align: middle;
+	width: 100px;
+	padding-left: 10px;
+	text-align: left;
+	padding: 0;
+	display: table-cell;
+}
+
+.header {
+	font-size: 16px;
+}
+
+tr {
+ display: table-row;
+ vertical-align: inherit;
+ border-color: inherit;
+}
+
+
 
 #arbs_list_separator {
 	box-sizing: border-box;
 	color: rgb(51, 51, 51);
 	display: block;
-	border: 0.2px solid black;
 }

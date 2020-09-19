@@ -1,7 +1,47 @@
 .card {
+	width: 100%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 50px;
+	background-image: linear-gradient(to right, #d0d0d0, #ebebeb);
+}
+
+.card_table {
+	margin-bottom: 0px;
+	position: relative;
+	border: none; 
+	width: 100%;
 	max-width: 100%;
-	margin-top: 3px;
-	margin-bottom: 3px;
+	background-color: transparent;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.top_row {
+	height: 50px;
+	color: #333;
+	background-color: #ebebeb;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+/*td {
+	text-align: left;
+}*/
+
+.profit {
+	width: 90px;
+	padding-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 
