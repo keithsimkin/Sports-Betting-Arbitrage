@@ -39,8 +39,8 @@ table {
 	vertical-align: middle;
 }
 
-#cardholder .arb {
-	width: 100px;
+#cardholder .arb { 
+	width: 80px;
 	padding-left: 10px;
 }
 
@@ -48,6 +48,20 @@ th {
 	text-align: left;
 	padding: 0;
 }
+
+#cardholder .game_head {
+	text-align: center;
+}
+
+#cardholder .market {
+	width: 70px;
+	text-align: center;
+}
+
+#cardholder .bet1, #cardholder .bet2, #cardholder .bet3 {
+	text-align: center;
+}
+
 
 
 

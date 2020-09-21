@@ -1,0 +1,35 @@
+.cardlet {
+	width: 100%;
+	position: relative;
+}
+
+.cardlet_table {
+	margin-bottom: 0px;
+	position: relative;
+	border: none;
+}
+
+.bookie_data1 {
+	padding-left: 5px;
+	width: 70px;
+}
+.bookie_data2 {
+	padding-left: 5px;
+	width: 500px;
+}
+
+.bookie_data3 {
+	width: 70px;
+}
+
+.full_game_bookie_data td {
+	padding-bottom: 5px;
+}
+
+.full_game_bookie_data .bookie_game_date, .full_game_bookie_data .bookie_game_time  {
+	font-size: 10px;
+}
+
+.bookie_data2 .bookie_game {
+	padding-top: 15px;
+}

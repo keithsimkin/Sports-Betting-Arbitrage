@@ -1,0 +1,64 @@
+.card {
+	width: 100%;
+	position: relative;
+}
+
+.card_table {
+	margin-bottom: 0px;
+	position: relative;
+	border: none;
+	width: 100%;
+	max-width: 100%;
+}
+
+.top_row {
+	background-color: #ebebeb;
+	color: #333;
+	height: 50px;
+}
+
+.profit {
+	width: 70px;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+	font-size: 22px;
+	font-weight: bold;
+	color: grey;
+	
+}
+
+.profit > div {
+	text-align: center;
+}
+
+.market_name, .bet1, .bet2, .bet3 {
+	width: 100px;
+	padding-left: 5px;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+}
+
+.top_row .bet1, .top_row .bet2, .top_row .bet3 {
+	padding-left: 2px;
+	text-align: center;
+	border-left: 3px solid #fff;
+}
+
+.top_row .market_name {
+	text-align: center;
+	width: 70px;
+	border-left: 3px solid #fff;
+}
+
+.card_table td {
+	text-align: left;
+	border: none;
+	padding: 0px;
+}
+
+.card_table .game {
+	text-align: center;
+	border-left: 3px solid #fff;
+}

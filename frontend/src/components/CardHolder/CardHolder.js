@@ -11,7 +11,7 @@ const CardHolder = ({ arbGames }) => {
 						<th className="arb">
 							<span>Arb</span>
 						</th>
-						<th className="">
+						<th className="game_head">
 							<span>Game</span>
 						</th>
 						<th className="market">
@@ -29,7 +29,6 @@ const CardHolder = ({ arbGames }) => {
 					</tr>
 				</thead>
 			</table>
-			<div id="arbs_list_separator"></div>
 			<Card />
 		</section>
 	)
