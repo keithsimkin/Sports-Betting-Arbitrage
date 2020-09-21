@@ -11,6 +11,7 @@
 
 .bookie_data1 {
 	padding-left: 5px;
+	padding-top: 14px;
 	width: 70px;
 }
 .bookie_data2 {
@@ -18,9 +19,6 @@
 	width: 500px;
 }
 
-.bookie_data3 {
-	width: 70px;
-}
 
 .full_game_bookie_data td {
 	padding-bottom: 5px;
@@ -32,4 +30,10 @@
 
 .bookie_data2 .bookie_game {
 	padding-top: 15px;
+}
+
+.bookie_data2 .bookie_league {
+	margin-top: 0px;
+	font-size: 12px;
+	color: #999999;
 }

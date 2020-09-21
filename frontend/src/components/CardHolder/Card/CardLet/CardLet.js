@@ -22,7 +22,6 @@ const CardLet = () => {
 								Soccer >> International Clubs >> UEFA Champions League, Preliminary Round
 							</p>
 						</td>
-						<td className="bookie_data3"></td>
 					</tr>
 				</tbody>
 			</table>

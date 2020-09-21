@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import Card from "./Card/Card";
 import "./cardholder.css";
 
-const CardHolder = ({ arbGames }) => {
+const CardHolder = () => {
 	return(
 		<section id="parent_holder">
-			<table id="cardholder">
+			<table id="cardholder" className="arb_scroll">
 				<thead> 
 					<tr className="header"> 
 						<th className="arb">
@@ -29,6 +29,9 @@ const CardHolder = ({ arbGames }) => {
 					</tr>
 				</thead>
 			</table>
+			<Card />
+			<Card />
+			<Card />
 			<Card />
 		</section>
 	)
