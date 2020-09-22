@@ -2,19 +2,6 @@ import React from "react";
 import CardLet from "./CardLet/CardLet";
 import "./card.css";
 
-// const extractGames = (str) => {
-// 	let strArr;
-// 	if (str.includes(" - ")) {
-// 		strArr = str.split(" - ")
-// 		return strArr;
-// 	} else if (str.includes(" vs ")) {
-// 		strArr = str.split(" vs ")
-// 		return strArr;
-// 	} else if (str.includes(" v ")){ 
-// 		strArr = str.split(" v ") 
-// 		return strArr; 
-// 	}
-// }
 
 const Card = () => {
 	return(

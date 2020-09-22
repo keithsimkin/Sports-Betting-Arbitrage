@@ -1,0 +1,9 @@
+.mobile_card {
+	display: none;
+}
+
+@media screen and (max-width: 669px) {
+	.mobile_card {
+		display: block;
+	}
+}

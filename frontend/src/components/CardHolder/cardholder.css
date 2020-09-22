@@ -1,11 +1,10 @@
 * {
 	box-sizing: border-box;
 }
+
 #parent_holder {
-	padding-left: 150px;
-	padding-right: 150px;
-	/*padding-top: 0px;
-	margin-top: 0px;*/
+	padding-left: 100px;
+	padding-right: 100px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -13,19 +12,12 @@
 #cardholder {
 	width: 100%;
 	overflow: hidden;
-}
+} 
 
 table {
 	background-color: transparent;
 	border-spacing: 0;
 	border-collapse: collapse;
-	display: table;
-	border-color: grey;
-}
-
-#cardholder > thead {
-	top: 0px; 
-	width: 720px;	
 }
 
 .header {
@@ -63,7 +55,28 @@ th {
 	text-align: center;
 }
 
+@media screen and (max-width: 706px) {
+	.header {
+		font-size: 14px;
+		height: 30px;
+	}
 
+	#cardholder .market {
+		width: 60px;
+		padding-left: 10px;
+	}
+
+	#cardholder .game_head {
+		text-align: center;
+		width: 50px;
+	}
+}
+
+@media screen and (max-width: 669px) {
+	#parent_holder {
+		display: none;
+	}
+}
 
 
 
