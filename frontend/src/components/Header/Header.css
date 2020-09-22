@@ -2,6 +2,11 @@ header {
 	width: 100%;
 }
 
+.top_header {
+	background-color: #fff;
+	z-index: 10;
+}
+
 .navbar {
 	border: 1px solid black;
 	padding: 10px;

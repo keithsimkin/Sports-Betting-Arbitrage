@@ -16,7 +16,7 @@ import "./card.css";
 // 	}
 // }
 
-const Card = ({ id, game, game_date, game_time, arb_combination, arb_received }) => {
+const Card = () => {
 	return(
 		<div className="card">
 			<table className="card_table"> 
@@ -25,7 +25,7 @@ const Card = ({ id, game, game_date, game_time, arb_combination, arb_received })
 						<td className="profit title">
 							<div><span>7.69%</span></div>
 						</td>
-						<td className="game title" colspan="">
+						<td className="game title">
 							<span>Alcorcon vs Tenerife</span>
 						</td>
 						<td className="market_name">
@@ -43,6 +43,7 @@ const Card = ({ id, game, game_date, game_time, arb_combination, arb_received })
 					</tr>
 				</tbody>
 			</table>
+			<CardLet />
 			<CardLet />
 			<CardLet />
 		</div>
