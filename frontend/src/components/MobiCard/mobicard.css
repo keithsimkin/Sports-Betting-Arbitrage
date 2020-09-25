@@ -1,9 +1,10 @@
-.mobile_card {
+.mobile_card_holder {
 	display: none;
 }
 
 @media screen and (max-width: 669px) {
-	.mobile_card {
+	.mobile_card_holder {
 		display: block;
+		border: 1px solid grey;
 	}
 }
