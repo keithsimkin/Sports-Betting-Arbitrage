@@ -1,5 +1,50 @@
 .mobile_card {
-	padding: 18px;
-	margin: 2px;
+	margin: 5px;
 	box-shadow: 1px 2px 2px 1px;
+	display: flex;
+	align-items: center;
 }
+
+.mobile_card p {
+	margin: 10px;
+	/*color: grey*/
+}
+
+.mobi_game {
+	padding-left: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.mobi_roi {
+	padding-left: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 401px) {
+	.mobi_game {
+		padding-left: 15px;
+		font-size: 13px;
+	}
+
+	.mobi_roi {
+		padding-left: 10px;
+		font-size: 22px;
+		font-weight: bold;
+	}
+}
+
+@media screen and (min-width: 429px) {
+	.mobi_game {
+		padding-left: 25px;
+		font-size: 15px;
+	}
+
+	.mobi_roi {
+		padding-left: 15px;
+		font-size: 26px;
+		font-weight: bold;
+	}
+}
+

@@ -12,7 +12,6 @@ class CardHolder extends Component {
 
 	changeArbScroll = (loc) => {
 		const arbScroll = document.querySelector(".arb_scroll");
-		//const cardParent = document.querySelector("#parent_holder")
 		arbScroll.style.cssText = `position: ${loc}; top:52.9px; z-index:10;`
 	}
 
