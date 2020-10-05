@@ -7,7 +7,18 @@ class MobiCardFullData extends Component {
 		const { game, roi } = this.props
 		return(
 				<div className="mobicard_fulldata">
-					<h3>{ roi }</h3>
+					<div>
+						<table>
+							<thead>
+								<tr>
+									<th>1 X 2</th>
+									<th>10Bet @ 2.23</th>
+									<th>1XBet @ 2.40</th>
+									<th>18Bet @ 5.93</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
 					<p>{ game }</p>
 					<div className="">
 						<button>Auto-arb</button>
