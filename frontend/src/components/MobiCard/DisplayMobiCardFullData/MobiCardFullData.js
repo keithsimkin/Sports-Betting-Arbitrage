@@ -6,7 +6,7 @@ class MobiCardFullData extends Component {
 	render() {
 		const { game, roi } = this.props
 		return(
-				<div>
+				<div className="mobicard_fulldata">
 					<h3>{ roi }</h3>
 					<p>{ game }</p>
 					<div className="">

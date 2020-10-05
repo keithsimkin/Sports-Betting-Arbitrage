@@ -7,7 +7,7 @@ class MobiCard extends Component {
 	render() {
 		const { games, clickCard } = this.props
 		return(
-				games.map(game => (
+				games.map(game => ( 
 					<div key={game.id}>
 						<div className="mobile_card" onClick={id => clickCard(game.id)}>
 							<p className="mobi_roi">{ game.roi }</p>

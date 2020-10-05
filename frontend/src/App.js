@@ -18,12 +18,6 @@ class App extends Component {
           <CardHolder/>
           <MobiCardHolder />
           <Footer />
-          {
-          //    
-          //
-          //
-          //   //     <SideNav />
-              }
         </div>
     );
   }
