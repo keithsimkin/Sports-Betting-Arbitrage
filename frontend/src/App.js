@@ -8,12 +8,6 @@ import "./App.css";
 //import { arbGames } from "./components/utils/arbs";
 
 class App extends Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     // arbGames: arbGames
-  //   }
-  // }
 
   render() {
     // const { arbGames } = this.state;
