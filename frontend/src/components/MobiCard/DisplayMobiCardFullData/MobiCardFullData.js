@@ -1,10 +1,20 @@
 import React, { Component } from "react";
+import AutoArbModal from "./AutoArbModal/AutoArbModal";
 import "./mobicardfulldata.css";
 
 class MobiCardFullData extends Component {
 
-	autoArb = () => {
-		console.log('self drive engaged')
+	constructor() {
+		super()
+		this.state = {
+			showModal: false
+		}
+	}
+
+	showAutoArbModal = () => {
+		this.setState({
+			showModal: !this.state.showModal
+		})
 	}
 
 	render() {
@@ -54,11 +64,12 @@ class MobiCardFullData extends Component {
 								<p className="fulldata_data">Soccer >> International Clubs >> UEFA Champions League, Preliminary Round</p>
 							</div>
 						</div>
-					{
+					
 						<div id="auto_arb">
-						 	<button onClick={this.autoArb}>auto-arb</button>
+						 	<button onClick={this.showAutoArbModal}>auto-arb</button>
+						 	<AutoArbModal closeArbModal={this.showAutoArbModal} showModal={this.state.showModal}/>
 						 </div>
-									}
+									
 				</div>
 		)
 	}
