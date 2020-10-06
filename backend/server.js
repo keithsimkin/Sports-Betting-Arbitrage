@@ -13,7 +13,7 @@ server.use(bodyParser.json());
 server.use('/api/v0/', IndexRouter);
 
 
-
+//https://medium.com/@devinjaystokes/using-proxycannon-ng-to-create-unlimited-rotating-proxies-fccffa70a728
 //getThreewayArbs().then(res => console.log(res.rows[0]))
 //
 //getThreewayArbs().then(console.log)
