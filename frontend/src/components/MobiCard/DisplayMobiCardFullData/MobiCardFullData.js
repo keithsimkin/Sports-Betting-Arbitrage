@@ -24,7 +24,7 @@ class MobiCardFullData extends Component {
 						<div className="fulldata_body">
 							<div className="fulldata_body_head">
 								<p className="fulldata_book">NaijaBet</p>
-								<p className="fulldata_date">11 Aug 2020</p>
+								<p className="fulldata_date">11.08.20</p>
 								<p className="fulldata_time">17:00</p>
 							</div>
 							<div className="fulldata_body_body">
@@ -56,7 +56,7 @@ class MobiCardFullData extends Component {
 						</div>
 					{
 						<div id="auto_arb">
-						 	<button onClick={this.autoArb}>Auto-arb</button>
+						 	<button onClick={this.autoArb}>auto-arb</button>
 						 </div>
 									}
 				</div>
