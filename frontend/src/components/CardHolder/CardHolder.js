@@ -7,7 +7,7 @@ class CardHolder extends Component {
 		super()
 		this.state = {
 			scrollPosition: ""
-		}
+		} 
 	}
 
 	changeArbScroll = (loc) => {

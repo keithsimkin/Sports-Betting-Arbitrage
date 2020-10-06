@@ -1,5 +1,64 @@
 .mobicard_fulldata {
-	margin: 10px;
+	margin: 8px;
+}
+
+.mobicard_fulldata table {
+	width: 100%;
+	font-size: 10.3px;
+	margin-bottom: 3px;
+}
+
+.mobicard_fulldata th {
+	padding: 3.3px;
+	text-align: center;
+	background-color: #ebebeb;
+	height: 25px;
+}
+
+.fulldata_body {
+	display: flex;
+	border: 1px solid grey;
+	margin-bottom: 5px;
+	padding-left: 2px;
+}
+
+.fulldata_body div {
+	margin: 0;
+}
+
+.fulldata_body .fulldata_body_head {
+	width: 7em;
+}
+
+.fulldata_body .fulldata_body_body {
+	font-size: 12px;
+}
+
+.fulldata_body div p {
+	margin: 0;
+}
+
+.fulldata_body .fulldata_book {
+	font-size: 12px;
+}
+
+.fulldata_body .fulldata_date,  .fulldata_body .fulldata_time {
+	font-size: 9px;
+	color: grey;
+}
+
+.fulldata_body_body .fulldata_game {
+	font-size: 10px;
+}
+
+.fulldata_body_body .fulldata_data {
+	font-size: 10px;
+	color: grey;
+}
+
+#auto_arb {
+	text-align: center;
+	padding: 8px;
 }
 
 

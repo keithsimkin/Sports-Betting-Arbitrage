@@ -22,7 +22,7 @@ const CardLet = () => {
 								Soccer >> International Clubs >> UEFA Champions League, Preliminary Round
 							</p>
 						</td>
-					</tr>
+					</tr> 
 				</tbody>
 			</table>
 		</div>
