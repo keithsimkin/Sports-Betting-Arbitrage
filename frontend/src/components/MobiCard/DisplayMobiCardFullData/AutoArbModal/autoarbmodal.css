@@ -40,8 +40,8 @@
 
 .modal-body {
   padding: 10px;
-  /*border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;*/
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .modal.enter-done {
@@ -73,3 +73,43 @@
 .modal-footer .arb {
    margin-bottom: 4px;
 }
+
+input[type=text] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 2px 2px 2px 0;
+  display: inline-block;
+}
+
+.arb-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.form-data {
+  float: left;
+  width: 50%;
+  margin-top: 2px;
+}
+
+.form-input{
+  float: left;
+  width: 50%;
+  margin-top: 2px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
