@@ -19,10 +19,11 @@
 }
 
 .modal-content {
-  width: 250px;
+  width: 90%;
   background-color: #fff;
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
 .modal.show .modal-content {
@@ -39,6 +40,36 @@
 
 .modal-body {
   padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  /*border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;*/
+}
+
+.modal.enter-done {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal.exit {
+  opacity: 0;
+}
+
+.modal.enter-done .modal-content {
+  transform: translateY(0);
+}
+
+.modal.exit .modal-content {
+  transform: translateY(-200px);
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-footer .close {
+  margin-top: 4px;
+}
+
+.modal-footer .arb {
+   margin-bottom: 4px;
 }
