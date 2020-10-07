@@ -3,20 +3,20 @@ import "./autoarbmodal.css";
 
 class AutoArbModal extends Component {
 
-	closeArbModal = (e) => {
-		this.props.closeArbModal && this.props.closeArbModal(e)
-	}
-
 	render() {
-		const { showModal } = this.props;
-		if (!showModal) {
-			return null;
-		}
+		const { showAutoArbModal, closeAutoArbModal } = this.props;
 		return(
-			<div>
-				<p>This is a modal</p>
-				<div>
-					<button onClick={e => this.closeArbModal(e)}>Close</button>
+			<div className={`modal ${showAutoArbModal ? "show": ""}`} onClick={closeAutoArbModal}>
+				<div className="modal-content" onClick={e => e.stopPropagation()}>
+					<div className="modal-header">
+						<p className="modal-title">This is a modal</p>
+					</div>
+					<div className="modal-body">
+						Lorem ipsum
+					</div>
+					<div className="modal-footer">
+						<button onClick={closeAutoArbModal} className="button">Close</button>
+					</div>
 				</div>
 			</div>
 		)

@@ -11,7 +11,7 @@ class MobiCardFullData extends Component {
 		}
 	}
 
-	showAutoArbModal = () => {
+	changeAutoArbModalState = () => {
 		this.setState({
 			showModal: !this.state.showModal
 		})
@@ -66,8 +66,8 @@ class MobiCardFullData extends Component {
 						</div>
 					
 						<div id="auto_arb">
-						 	<button onClick={this.showAutoArbModal}>auto-arb</button>
-						 	<AutoArbModal closeArbModal={this.showAutoArbModal} showModal={this.state.showModal}/>
+						 	<button onClick={this.changeAutoArbModalState}>auto-arb</button>
+						 	<AutoArbModal closeAutoArbModal={this.changeAutoArbModalState} showAutoArbModal={this.state.showModal}/>
 						 </div>
 									
 				</div>
