@@ -6,7 +6,7 @@ import "./autoarbmodal.css";
 class AutoArbModal extends Component {
 
 	constructor(){
-		super()
+		super() 
 		this.state = {
 			odds1: "",
 			odds2:"",
@@ -15,12 +15,22 @@ class AutoArbModal extends Component {
 	}
 
 	inputChange = e => {
-		let stakeAmount = Number(e.target.value) 
-		console.log(stakeAmount)
+		const re = /^[0-9\b]+$/
+		if (e.target.value === "" || re.test(e.target.value)) {
+			let stakeAmount = Number(e.target.value) 
+			let stakeAmountSplit = stakeAmount/3
+			this.setState({
+				odds1: stakeAmountSplit,
+				odds2: stakeAmountSplit,
+				odds3: stakeAmountSplit
+			})
+		}
 	}
 
+
+
 	render() {
-		const { showAutoArbModal, closeAutoArbModal } = this.props;
+		const { showAutoArbModal, closeAutoArbModal, oddsA, oddsB, oddsC, gameName, roi } = this.props;
 		return ReactDOM.createPortal(
 				<CSSTransition
 					in={showAutoArbModal}
@@ -33,7 +43,7 @@ class AutoArbModal extends Component {
 					<div className={`modal ${showAutoArbModal ? "show": ""}`} onClick={closeAutoArbModal}>
 						<div className="modal-content" onClick={e => e.stopPropagation()}>
 							<div className="modal-header">
-								<p className="modal-title">6.76% | FC Tver - Chita</p>
+								<p className="modal-title">{ `${roi} | ${gameName}` }</p>
 							</div>
 							<div className="modal-body">
 								<div className="arb-form">
@@ -47,26 +57,26 @@ class AutoArbModal extends Component {
 									</div>
 									<div className="row">
 										<div className="form-data">
-											<label htmlFor="odds1" className="label">Bet9ja @ 2.23</label>
+											<label htmlFor="odds1" className="label">{ oddsA }</label>
 										</div>
 										<div className="form-input">
-											<input type="text" name="odds1" id="odds1" maxLength="10" size="5"/>
+											<input readOnly value={this.state.odds1} type="text" name="odds1" id="odds1" maxLength="10" size="5"/>
 										</div>
 									</div>
 									<div className="row">
 										<div className="form-data">
-											<label htmlFor="odds2" className="label">Naijabet @ 2.40</label>
+											<label htmlFor="odds2" className="label">{ oddsB }</label>
 										</div>
 										<div className="form-input">
-											<input type="text" name="odds2" id="odds2" maxLength="10" size="5"/>
+											<input readOnly value={this.state.odds2} type="text" name="odds2" id="odds2" maxLength="10" size="5"/>
 										</div>
 									</div>
 									<div className="row">
 										<div className="form-data">
-											<label htmlFor="odds3" className="label">18Bet @ 5.93</label>
+											<label htmlFor="odds3" className="label">{ oddsC }</label>
 										</div>
 										<div className="form-input">
-											<input type="text" name="odds3" id="odds3" maxLength="10" size="5"/>
+											<input readOnly value={this.state.odds3} type="text" name="odds3" id="odds3" maxLength="10" size="5"/>
 										</div>
 									</div>
 								</div>

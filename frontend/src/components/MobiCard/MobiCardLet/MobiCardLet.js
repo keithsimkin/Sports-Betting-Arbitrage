@@ -10,10 +10,10 @@ class MobiCard extends Component {
 				games.map(game => ( 
 					<div key={game.id} className="mobicard_parent">
 						<div className="mobile_card" onClick={id => clickCard(game.id)}>
-							<p className="mobi_roi">{ game.roi }</p>
+							<p className="mobi_roi">{ game.arb_combination.roi }</p>
 							<p className="mobi_game">{ game.game }</p>
 						</div>
-						{ game.showFullData === false ? "" : <MobiCardFullData game={game.game} roi={game.roi} /> }
+						{ game.showFullData === false ? "" : <MobiCardFullData game={game}/> }
 					</div>
 				))
 		)

@@ -10,7 +10,22 @@ export const arbGames = [
             "bet9ja_away": 2.87,
             "roi": "1.96%"
         },
-        "arb_received": "2020-09-13T11:28:17.580Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.580Z",
+        "book1": "bet9ja",
+        "book1_country": "South Africa ",
+        "book1_league": "National First Division",
+        "book1_game": "Ts Galaxy - Steenberg Utd",
+        "book2": "naijabet",
+        "book2_country": "South Africa ",
+        "book2_league": "National First Division",
+        "book2_game": "TS Galaxy vs Steenberg United",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 2,
@@ -23,7 +38,22 @@ export const arbGames = [
             "naijabet_away": 2.7,
             "roi": "12.04%"
         },
-        "arb_received": "2020-09-13T11:28:17.580Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.580Z",
+        "book1": "bet9ja",
+        "book1_country": "South Africa ",
+        "book1_league": "National First Division",
+        "book1_game": "Ts Sporting - Moroka Swallows FC",
+        "book2": "naijabet",
+        "book2_country": "South Africa ",
+        "book2_league": "National First Division",
+        "book2_game": "TS Sporting vs Moroka Swallows FC",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 3,
@@ -36,7 +66,22 @@ export const arbGames = [
             "naijabet_away": 5.6,
             "roi": "14.59%"
         },
-        "arb_received": "2020-09-13T11:28:17.580Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.580Z",
+        "book1": "bet9ja",
+        "book1_country": "Russia ",
+        "book1_league": "PFL, Group 2",
+        "book1_game": "FC Tver - Chita",
+        "book2": "naijabet",
+        "book2_country": "Russia ",
+        "book2_league": "PFL, Group 2",
+        "book2_game": "Volga Tver vs FK Chita",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 4,
@@ -49,7 +94,22 @@ export const arbGames = [
             "naijabet_away": 5.6,
             "roi": "11.42%"
         },
-        "arb_received": "2020-09-13T11:28:17.580Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.580Z",
+        "book1": "bet9ja",
+        "book1_country": "Russia ",
+        "book1_league": "PFL, Group 2",
+        "book1_game": "FC Tver - Chita",
+        "book2": "naijabet",
+        "book2_country": "Russia ",
+        "book2_league": "PFL, Group 2",
+        "book2_game": "Volga Tver vs FK Chita",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 5,
@@ -62,7 +122,22 @@ export const arbGames = [
             "naijabet_away": 6.3,
             "roi": "0.34%"
         },
-        "arb_received": "2020-09-13T11:28:17.581Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.581Z",
+        "book1": "bet9ja",
+        "book1_country": "Russia ",
+        "book1_league": "Football National League",
+        "book1_game": "Krylia Sovetov Samara - Ska-Khabarovsk",
+        "book2": "naijabet",
+        "book2_country": "Russia ",
+        "book2_league": "Football National League",
+        "book2_game": "FC Kryliya Sovetov Samara vs FC SKA-Energiya Khabarovsk",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 6,
@@ -75,7 +150,22 @@ export const arbGames = [
             "naijabet_away": 3.76,
             "roi": "2.65%"
         },
-        "arb_received": "2020-09-13T11:28:17.581Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.581Z",
+        "book1": "bet9ja",
+        "book1_country": "Tunisia ",
+        "book1_league": "Ligue 1",
+        "book1_game": "ES Metlaoui - CS Chebba",
+        "book2": "naijabet",
+        "book2_country": "Tunisia ",
+        "book2_league": "Ligue 1",
+        "book2_game": "ES Metlaoui vs Chebba",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 7,
@@ -88,7 +178,22 @@ export const arbGames = [
             "naijabet_away": 3.76,
             "roi": "0.01%"
         },
-        "arb_received": "2020-09-13T11:28:17.581Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.581Z",
+        "book1": "bet9ja",
+        "book1_country": "Tunisia ",
+        "book1_league": "Ligue 1",
+        "book1_game": "ES Metlaoui - CS Chebba",
+        "book2": "naijabet",
+        "book2_country": "Tunisia ",
+        "book2_league": "Ligue 1",
+        "book2_game": "ES Metlaoui vs Chebba",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 8,
@@ -101,7 +206,22 @@ export const arbGames = [
             "bet9ja_away": 3.75,
             "roi": "0.60%"
         },
-        "arb_received": "2020-09-13T11:28:17.581Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.581Z",
+        "book1": "bet9ja",
+        "book1_country": "South Africa ",
+        "book1_league": "Premier League",
+        "book1_game": "Kaizer Chiefs - Bidvest Wits FC",
+        "book2": "naijabet",
+        "book2_country": "South Africa ",
+        "book2_league": "Premier League",
+        "book2_game": "Kaizer Chiefs FC vs Bidvest Wits FC",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 9,
@@ -114,7 +234,22 @@ export const arbGames = [
             "naijabet_away": 12.85,
             "roi": "0.03%"
         },
-        "arb_received": "2020-09-13T11:28:17.582Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.582Z",
+        "book1": "bet9ja",
+        "book1_country": "Sweden ",
+        "book1_league": "Allsvenskan",
+        "book1_game": "Malmo FF - Orebro",
+        "book2": "naijabet",
+        "book2_country": "Sweden ",
+        "book2_league": "Allsvenskan",
+        "book2_game": "Malmo FF vs Orebro SK",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 10,
@@ -127,7 +262,22 @@ export const arbGames = [
             "naijabet_away": 4.72,
             "roi": "1.29%"
         },
-        "arb_received": "2020-09-13T11:28:17.582Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.582Z",
+        "book1": "bet9ja",
+        "book1_country": "Brazil ",
+        "book1_league": "Brasileiro Serie A",
+        "book1_game": "Atletico MG - Corinthians",
+        "book2": "naijabet",
+        "book2_country": "Brazil ",
+        "book2_league": "Brasileiro Serie A",
+        "book2_game": "Atletico MG vs Corinthians SP",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 11,
@@ -140,7 +290,22 @@ export const arbGames = [
             "naijabet_away": 2.5,
             "roi": "0.18%"
         },
-        "arb_received": "2020-09-13T11:28:17.583Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.583Z",
+        "book1": "bet9ja",
+        "book1_country": "Poland ",
+        "book1_league": "Puchar Polski",
+        "book1_game": "KS Sleza Wroclaw - Wigry Suwalki",
+        "book2": "naijabet",
+        "book2_country": "Poland ",
+        "book2_league": "Puchar Polski",
+        "book2_game": "Sleza Wroclaw vs Wigry Suwalki",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 12,
@@ -153,7 +318,22 @@ export const arbGames = [
             "bet9ja_away": 2.75,
             "roi": "0.65%"
         },
-        "arb_received": "2020-09-13T11:28:17.587Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.587Z",
+        "book1": "bet9ja",
+        "book1_country": "Germany ",
+        "book1_league": "Regionalliga Northeast",
+        "book1_game": "BSG Chemie Leipzig - BFC Dynamo",
+        "book2": "naijabet",
+        "book2_country": "Germany ",
+        "book2_league": "Regionalliga Northeast",
+        "book2_game": "Bsg Chemie Leipzig vs BFC Dynamo",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 13,
@@ -166,7 +346,22 @@ export const arbGames = [
             "bet9ja_away": 1.88,
             "roi": "3.33%"
         },
-        "arb_received": "2020-09-13T11:28:17.599Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.599Z",
+        "book1": "bet9ja",
+        "book1_country": "Austria ",
+        "book1_league": "Regionalliga Salzburg",
+        "book1_game": "Grodig - Pinzgau Saalfelden",
+        "book2": "naijabet",
+        "book2_country": "Austria ",
+        "book2_league": "Regionalliga Salzburg",
+        "book2_game": "SV Scholz Grodig vs FC Pinzgau Saalfelden",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 14,
@@ -179,7 +374,22 @@ export const arbGames = [
             "bet9ja_away": 2.96,
             "roi": "1.25%"
         },
-        "arb_received": "2020-09-13T11:28:17.602Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.602Z",
+        "book1": "bet9ja",
+        "book1_country": "Brazil ",
+        "book1_league": "Brasileiro Serie B",
+        "book1_game": "Sampaio Correa - Figueirense",
+        "book2": "naijabet",
+        "book2_country": "Brazil ",
+        "book2_league": "Brasileiro Serie B",
+        "book2_game": "Sampaio Correa MA vs Figueirense SC",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 15,
@@ -192,7 +402,22 @@ export const arbGames = [
             "bet9ja_away": 2.96,
             "roi": "2.40%"
         },
-        "arb_received": "2020-09-13T11:28:17.602Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.602Z",
+        "book1": "bet9ja",
+        "book1_country": "Brazil ",
+        "book1_league": "Brasileiro Serie B",
+        "book1_game": "Sampaio Correa - Figueirense",
+        "book2": "naijabet",
+        "book2_country": "Brazil ",
+        "book2_league": "Brasileiro Serie B",
+        "book2_game": "Sampaio Correa MA vs Figueirense SC",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 16,
@@ -205,7 +430,22 @@ export const arbGames = [
             "bet9ja_away": 3.5,
             "roi": "0.13%"
         },
-        "arb_received": "2020-09-13T11:28:17.603Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.603Z",
+        "book1": "bet9ja",
+        "book1_country": "Qatar ",
+        "book1_league": "Stars League",
+        "book1_game": "Al-Khor SC - Al Shahaniya",
+        "book2": "naijabet",
+        "book2_country": "Qatar ",
+        "book2_league": "Stars League",
+        "book2_game": "Al Khoor vs Al-Shahania SC",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 17,
@@ -218,7 +458,22 @@ export const arbGames = [
             "bet9ja_away": 3.4,
             "roi": "3.32%"
         },
-        "arb_received": "2020-09-13T11:28:17.607Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.607Z",
+        "book1": "bet9ja",
+        "book1_country": "Belgium ",
+        "book1_league": "First Division A",
+        "book1_game": "Standard Liege - Genk",
+        "book2": "naijabet",
+        "book2_country": "Belgium ",
+        "book2_league": "First Division A",
+        "book2_game": "Standard Liege vs KRC Genk",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 18,
@@ -231,7 +486,22 @@ export const arbGames = [
             "naijabet_away": 5.35,
             "roi": "4.95%"
         },
-        "arb_received": "2020-09-13T11:28:17.609Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.609Z",
+        "book1": "bet9ja",
+        "book1_country": "Macedonia ",
+        "book1_league": "1. MFL",
+        "book1_game": "Struga Trim Lum - Borec",
+        "book2": "naijabet",
+        "book2_country": "Macedonia ",
+        "book2_league": "1. MFL",
+        "book2_game": "FC Struga Trim Lum vs FK Borec",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 19,
@@ -244,7 +514,22 @@ export const arbGames = [
             "naijabet_away": 5.35,
             "roi": "0.13%"
         },
-        "arb_received": "2020-09-13T11:28:17.609Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.609Z",
+        "book1": "bet9ja",
+        "book1_country": "Macedonia ",
+        "book1_league": "1. MFL",
+        "book1_game": "Struga Trim Lum - Borec",
+        "book2": "naijabet",
+        "book2_country": "Macedonia ",
+        "book2_league": "1. MFL",
+        "book2_game": "FC Struga Trim Lum vs FK Borec",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 20,
@@ -257,7 +542,22 @@ export const arbGames = [
             "bet9ja_away": 2.74,
             "roi": "0.48%"
         },
-        "arb_received": "2020-09-13T11:28:17.610Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.610Z",
+        "book1": "bet9ja",
+        "book1_country": "Montenegro ",
+        "book1_league": "1. CFL",
+        "book1_game": "OFK Petrovac - Podgorica",
+        "book2": "naijabet",
+        "book2_country": "Montenegro ",
+        "book2_league": "1. CFL",
+        "book2_game": "Ofk Petrovac vs FK Podgorica",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 21,
@@ -270,7 +570,22 @@ export const arbGames = [
             "bet9ja_away": 2.83,
             "roi": "2.12%"
         },
-        "arb_received": "2020-09-13T11:28:17.610Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.610Z",
+        "book1": "bet9ja",
+        "book1_country": "Brazil ",
+        "book1_league": "Brasileiro Serie A",
+        "book1_game": "Vasco DA Gama - Gremio",
+        "book2": "naijabet",
+        "book2_country": "Brazil ",
+        "book2_league": "Brasileiro Serie A",
+        "book2_game": "Vasco Da Gama RJ vs Gremio RS",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 22,
@@ -283,7 +598,22 @@ export const arbGames = [
             "bet9ja_away": 2.83,
             "roi": "4.87%"
         },
-        "arb_received": "2020-09-13T11:28:17.610Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.610Z",
+        "book1": "bet9ja",
+        "book1_country": "Brazil ",
+        "book1_league": "Brasileiro Serie A",
+        "book1_game": "Vasco DA Gama - Gremio",
+        "book2": "naijabet",
+        "book2_country": "Brazil ",
+        "book2_league": "Brasileiro Serie A",
+        "book2_game": "Vasco Da Gama RJ vs Gremio RS",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 23,
@@ -296,7 +626,22 @@ export const arbGames = [
             "bet9ja_away": 2.18,
             "roi": "1.54%"
         },
-        "arb_received": "2020-09-13T11:28:17.611Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.611Z",
+        "book1": "bet9ja",
+        "book1_country": "Kazakhstan ",
+        "book1_league": "Premier League",
+        "book1_game": "Tobol Kostanay - Astana",
+        "book2": "naijabet",
+        "book2_country": "Kazakhstan ",
+        "book2_league": "Premier League",
+        "book2_game": "Tobol Kostanay vs FC Astana",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 24,
@@ -309,7 +654,22 @@ export const arbGames = [
             "bet9ja_away": 2.18,
             "roi": "8.82%"
         },
-        "arb_received": "2020-09-13T11:28:17.611Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.611Z",
+        "book1": "bet9ja",
+        "book1_country": "Kazakhstan ",
+        "book1_league": "Premier League",
+        "book1_game": "Tobol Kostanay - Astana",
+        "book2": "naijabet",
+        "book2_country": "Kazakhstan ",
+        "book2_league": "Premier League",
+        "book2_game": "Tobol Kostanay vs FC Astana",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 25,
@@ -322,7 +682,22 @@ export const arbGames = [
             "bet9ja_away": 3.7,
             "roi": "0.96%"
         },
-        "arb_received": "2020-09-13T11:28:17.612Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.612Z",
+        "book1": "bet9ja",
+        "book1_country": "Peru ",
+        "book1_league": "Primera Division, Apertura",
+        "book1_game": "Sporting Cristal - Alianza Lima",
+        "book2": "naijabet",
+        "book2_country": "Peru ",
+        "book2_league": "Primera Division, Apertura",
+        "book2_game": "Sporting Cristal vs Alianza Lima",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 26,
@@ -335,7 +710,22 @@ export const arbGames = [
             "naijabet_away": 2.02,
             "roi": "0.65%"
         },
-        "arb_received": "2020-09-13T11:28:17.614Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.614Z",
+        "book1": "bet9ja",
+        "book1_country": "International Clubs ",
+        "book1_league": "UEFA Europa League, Qualification",
+        "book1_game": "FH Hafnarfjordur - Dac 1904 Dunajska Streda",
+        "book2": "naijabet",
+        "book2_country": "International Clubs ",
+        "book2_league": "UEFA Europa League, Qualification",
+        "book2_game": "FH Hafnarfjordur vs Dac 1904 Dunajska Streda",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 27,
@@ -348,7 +738,22 @@ export const arbGames = [
             "naijabet_away": 14.1,
             "roi": "6.46%"
         },
-        "arb_received": "2020-09-13T11:28:17.617Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.617Z",
+        "book1": "bet9ja",
+        "book1_country": "Austria ",
+        "book1_league": "Regionalliga Centre",
+        "book1_game": "WSC Hertha - Wolfsberger AC (A)",
+        "book2": "naijabet",
+        "book2_country": "Austria ",
+        "book2_league": "Regionalliga Centre",
+        "book2_game": "WSC Hertha Wels vs Wolfsberger AC II",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 28,
@@ -361,7 +766,22 @@ export const arbGames = [
             "bet9ja_away": 3.6,
             "roi": "4.48%"
         },
-        "arb_received": "2020-09-13T11:28:17.618Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.618Z",
+        "book1": "bet9ja",
+        "book1_country": "South Africa ",
+        "book1_league": "Premier League",
+        "book1_game": "Stellenbosch - Amazulu Durban",
+        "book2": "naijabet",
+        "book2_country": "South Africa ",
+        "book2_league": "Premier League",
+        "book2_game": "Stellenbosch FC vs Amazulu FC",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     },
     {
         "id": 29,
@@ -374,6 +794,21 @@ export const arbGames = [
             "bet9ja_away": 3.6,
             "roi": "4.67%"
         },
-        "arb_received": "2020-09-13T11:28:17.618Z"
+        "showFullData": false,
+        "sport": "Soccer",
+        "market":"1X2",
+        "arb_received": "2020-09-13T11:28:17.618Z",
+        "book1": "bet9ja",
+        "book1_country": "South Africa ",
+        "book1_league": "Premier League",
+        "book1_game": "Stellenbosch - Amazulu Durban",
+        "book2": "naijabet",
+        "book2_country": "South Africa ",
+        "book2_league": "Premier League",
+        "book2_game": "Stellenbosch FC vs Amazulu FC",
+        "book3": null,
+        "book3_country": null,
+        "book3_league": null,
+        "book3_game": null
     }
 ]

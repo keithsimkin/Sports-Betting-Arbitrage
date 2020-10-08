@@ -1,3 +1,36 @@
+ [
+				{
+			        "id": 1,
+			        "game": "Ts Galaxy - Steenberg Utd",
+			        "game_date": "12 August 2020",
+			        "game_time": "14:30",
+			        "arb_combination": {
+			            "naijabet_home": 3.4,
+			            "bet9ja_draw": 2.96,
+			            "bet9ja_away": 2.87,
+			            "roi": "1.96%"
+			        },
+			        "showFullData": false,
+			        "sport": "Soccer",
+			        "market":"1X2",
+			        "arb_received": "2020-09-13T11:28:17.580Z",
+			        "book1": "bet9ja",
+			        "book1_country": "South Africa ",
+			        "book1_league": "National First Division",
+			        "book1_game": "Ts Galaxy - Steenberg Utd",
+			        "book2": "naijabet",
+			        "book2_country": "South Africa ",
+			        "book2_league": "National First Division",
+			        "book2_game": "TS Galaxy vs Steenberg United",
+			        "book3": null,
+			        "book3_country": null,
+			        "book3_league": null,
+			        "book3_game": null
+			    }
+			]
+
+
+
 <form>
 	<label for="stake">Stake Amount:</label>
 	<br>
@@ -12,7 +45,70 @@
 
 
 
-
+switch(uniqueBookies) {
+								case 2:
+									{
+										<div className="fulldata_body">
+											<div className="fulldata_body_head">
+												<p className="fulldata_book">{ game.book1 }</p>
+												<p className="fulldata_date">{ game.game_date }</p>
+												<p className="fulldata_time">{ game.game_time }</p>
+											</div>
+											<div className="fulldata_body_body">
+												<p className="fulldata_game">{ game.book1_game }</p>
+												<p className="fulldata_data">{ `${game.sport} >> ${game.book1_country} >> ${game.book1_league}`}</p>
+											</div>
+										</div>	
+										<div className="fulldata_body">
+											<div className="fulldata_body_head">
+												<p className="fulldata_book">{ game.book2 }</p>
+												<p className="fulldata_date">{ game.game_date }</p>
+												<p className="fulldata_time">{ game.game_time }</p>
+											</div>
+											<div className="fulldata_body_body">
+												<p className="fulldata_game">{ game.book2_game }</p>
+												<p className="fulldata_data">{ `${game.sport} >> ${game.book2_country} >> ${game.book2_league}`}</p>
+											</div>
+										</div>
+									}
+									break;
+								case 3:
+									{
+										<div className="fulldata_body">
+											<div className="fulldata_body_head">
+												<p className="fulldata_book">{ game.book1 }</p>
+												<p className="fulldata_date">{ game.game_date }</p>
+												<p className="fulldata_time">{ game.game_time }</p>
+											</div>
+											<div className="fulldata_body_body">
+												<p className="fulldata_game">{ game.book1_game }</p>
+												<p className="fulldata_data">{ `${game.sport} >> ${game.book1_country} >> ${game.book1_league}`}</p>
+											</div>
+										</div>	
+										<div className="fulldata_body">
+											<div className="fulldata_body_head">
+												<p className="fulldata_book">{ game.book2 }</p>
+												<p className="fulldata_date">{ game.game_date }</p>
+												<p className="fulldata_time">{ game.game_time }</p>
+											</div>
+											<div className="fulldata_body_body">
+												<p className="fulldata_game">{ game.book2_game }</p>
+												<p className="fulldata_data">{ `${game.sport} >> ${game.book2_country} >> ${game.book2_league}`}</p>
+											</div>
+										</div>
+										<div className="fulldata_body">
+											<div className="fulldata_body_head">
+												<p className="fulldata_book">{ game.book3 }</p>
+												<p className="fulldata_date">{ game.game_date }</p>
+												<p className="fulldata_time">{ game.game_time }</p>
+											</div>
+											<div className="fulldata_body_body">
+												<p className="fulldata_game">{ game.book3_game }</p>
+												<p className="fulldata_data">{ `${game.sport} >> ${game.book3_country} >> ${game.book3_league}`}</p>
+											</div>
+										</div>
+									}
+									break;
 
 
 
