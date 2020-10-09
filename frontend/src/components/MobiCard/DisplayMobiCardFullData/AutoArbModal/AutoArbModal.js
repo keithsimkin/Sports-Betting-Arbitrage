@@ -5,12 +5,15 @@ import "./autoarbmodal.css";
 
 class AutoArbModal extends Component {
 
-	constructor(){
-		super() 
+	constructor(props){
+		super(props) 
 		this.state = {
 			odds1: "",
 			odds2:"",
-			odds3:""
+			odds3:"",
+			oddsA: this.props.oddsA,
+			oddsB: this.props.oddsB,
+			oddsC: this.props.oddsC
 		}
 	}
 
@@ -18,11 +21,19 @@ class AutoArbModal extends Component {
 		const re = /^[0-9\b]+$/
 		if (e.target.value === "" || re.test(e.target.value)) {
 			let stakeAmount = Number(e.target.value) 
-			let stakeAmountSplit = stakeAmount/3
+			let oddsData = [this.state.oddsA, this.state.oddsB, this.state.oddsC]
+			oddsData = oddsData.map(item => item = item.split(" @ ")[1])
+			oddsData = oddsData.map(Number)
+			let combinedMargin = oddsData.reduce((acc, ci) => {
+				return acc + (1 / ci)
+			}, 0)
+			combinedMargin = Number(combinedMargin.toFixed(4))
+			let stakeAmountSplit = oddsData.map(odd => (stakeAmount * (1 / odd))/combinedMargin)
+			stakeAmountSplit = stakeAmountSplit.map(item => item.toFixed(1)) 
 			this.setState({
-				odds1: stakeAmountSplit,
-				odds2: stakeAmountSplit,
-				odds3: stakeAmountSplit
+				odds1: stakeAmountSplit[0],
+				odds2: stakeAmountSplit[1],
+				odds3: stakeAmountSplit[2]
 			})
 		}
 	}
