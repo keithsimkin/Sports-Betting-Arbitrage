@@ -6,7 +6,7 @@
 }
 
 .navbar {
-	padding: 7px;
+	padding: 5px;
 	display: grid;
 	grid-template-columns: 1fr 6fr 1fr;
 	grid-gap: 5px;
@@ -19,6 +19,10 @@
 .navbar .user, .navbar .logo {
 	text-align: center;
 	padding-top: 5px;
+}
+
+.navbar .logo {
+	padding-top: 2px;
 }
 
 @media screen and (min-width: 513px) {

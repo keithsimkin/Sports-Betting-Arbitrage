@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaHome, FaBars, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaBars, FaBolt } from "react-icons/fa";
 
 import "./footer.css"
 
@@ -51,8 +51,8 @@ class Footer extends Component {
 		return(
 			<footer className="footer">
 				<FaHome onClick={() => this.handleHomeButton(1)} className={iconstate[0].active ? "icon" : "icon-new"}/>
-				<FaBars onClick={() => this.handleIconStates(2)} className={iconstate[1].active ? "icon" : "icon-new"}/>
-				<FaEnvelope onClick={() => this.handleIconStates(3)} className={iconstate[2].active ? "icon" : "icon-new"}/>
+				<FaBolt onClick={() => this.handleIconStates(2)} className={iconstate[1].active ? "icon" : "icon-new"}/>
+				<FaBars onClick={() => this.handleIconStates(3)} className={iconstate[2].active ? "icon" : "icon-new"}/>
 			</footer>
 		)
 	}
