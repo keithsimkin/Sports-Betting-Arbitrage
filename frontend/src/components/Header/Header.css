@@ -1,37 +1,17 @@
-header {
-	width: 100%;
-}
-
 .top_header {
 	background-color: #fff;
 	z-index: 10;
-}
-
-.navbar {
-	border: 1px solid black;
-	padding: 10px;
-	display: flex;
-}
-
-.logo { 
 	width: 100%;
 }
 
-.logo:hover {
-	cursor: pointer;
+.navbar {
+	padding: 9px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.searchbar {
-	margin-left: 20px;
-	width: 400px;
-} 
-
-.user {
-	margin-left: auto;
-}
-
-.user:hover {
-	cursor: pointer;
+.navbar > div {
+	padding: 2px;
 }
 
 @media screen and (min-width: 513px) {

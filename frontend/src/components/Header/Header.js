@@ -13,7 +13,7 @@ const Header = () => {
 		          </div> 
 		          <div className="searchbar">
 		          	<SearchBar />
-		          </div> 
+		          </div>  
 		          <div className="user">
 		          	<UserProfile />
 		          </div>

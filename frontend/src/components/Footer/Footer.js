@@ -43,7 +43,7 @@ class Footer extends Component {
 	handleHomeButton = (id) => {
 		this.changeIconClass(id)
 		this.updateIcons(id)
-		console.log('bugsmaster')
+		window.scrollTo(0, 0)
 	}
 
 	render() {
