@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+//import InfiniteScroll from "react-infinite-scroller";
 import MobiCard from "./MobiCardLet/MobiCardLet";
 import { arbGames } from "../utils/arbs";
 import "./mobicard.css";
@@ -11,6 +12,7 @@ class MobiCardHolder extends Component {
 			games: arbGames
 		}
 	}
+
 
 	clickCard = (idx) => {
 		const { games } = this.state;
@@ -46,7 +48,7 @@ class MobiCardHolder extends Component {
 			<section className="mobile_card_holder"> 
 				<MobiCard games={this.state.games} clickCard={id => this.clicksHandle(id)}/>
 			</section>
-		)
+		) 
 	}
 }
 
