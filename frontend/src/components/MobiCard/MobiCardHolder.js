@@ -32,8 +32,7 @@ class MobiCardHolder extends Component {
 		const newCardState = this.clickCard(id)
 		const currentActiveCards = newCardState.filter(obj => obj.showFullData === true)
 		if (currentActiveCards.length > 1) {
-			let prevActive = currentActiveCards
-			let deactivateCard = prevActive.filter(gameObj => gameObj.id !== id)
+			let deactivateCard = currentActiveCards.filter(gameObj => gameObj.id !== id)
 			deactivateCard.forEach(item => item.showFullData = false)
 		}
 	}
