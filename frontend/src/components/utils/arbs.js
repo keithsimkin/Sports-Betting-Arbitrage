@@ -9,8 +9,8 @@ export const arbGames = [
             "bet9ja_draw": 2.96,
             "bet9ja_away": 2.87,
             "roi": "1.96%"
-        },
-        "showFullData": false,
+        }, 
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.580Z",
@@ -38,7 +38,7 @@ export const arbGames = [
             "naijabet_away": 2.7,
             "roi": "12.04%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.580Z",
@@ -66,7 +66,7 @@ export const arbGames = [
             "naijabet_away": 5.6,
             "roi": "14.59%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.580Z",
@@ -94,7 +94,7 @@ export const arbGames = [
             "naijabet_away": 5.6,
             "roi": "11.42%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.580Z",
@@ -122,7 +122,7 @@ export const arbGames = [
             "naijabet_away": 6.3,
             "roi": "0.34%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.581Z",
@@ -150,7 +150,7 @@ export const arbGames = [
             "naijabet_away": 3.76,
             "roi": "2.65%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.581Z",
@@ -178,7 +178,7 @@ export const arbGames = [
             "naijabet_away": 3.76,
             "roi": "0.01%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.581Z",
@@ -206,7 +206,7 @@ export const arbGames = [
             "bet9ja_away": 3.75,
             "roi": "0.60%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.581Z",
@@ -234,7 +234,7 @@ export const arbGames = [
             "naijabet_away": 12.85,
             "roi": "0.03%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.582Z",
@@ -262,7 +262,7 @@ export const arbGames = [
             "naijabet_away": 4.72,
             "roi": "1.29%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.582Z",
@@ -290,7 +290,7 @@ export const arbGames = [
             "naijabet_away": 2.5,
             "roi": "0.18%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.583Z",
@@ -318,7 +318,7 @@ export const arbGames = [
             "bet9ja_away": 2.75,
             "roi": "0.65%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.587Z",
@@ -346,7 +346,7 @@ export const arbGames = [
             "bet9ja_away": 1.88,
             "roi": "3.33%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.599Z",
@@ -374,7 +374,7 @@ export const arbGames = [
             "bet9ja_away": 2.96,
             "roi": "1.25%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.602Z",
@@ -402,7 +402,7 @@ export const arbGames = [
             "bet9ja_away": 2.96,
             "roi": "2.40%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.602Z",
@@ -430,7 +430,7 @@ export const arbGames = [
             "bet9ja_away": 3.5,
             "roi": "0.13%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.603Z",
@@ -458,7 +458,7 @@ export const arbGames = [
             "bet9ja_away": 3.4,
             "roi": "3.32%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.607Z",
@@ -486,7 +486,7 @@ export const arbGames = [
             "naijabet_away": 5.35,
             "roi": "4.95%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.609Z",
@@ -514,7 +514,7 @@ export const arbGames = [
             "naijabet_away": 5.35,
             "roi": "0.13%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.609Z",
@@ -542,7 +542,7 @@ export const arbGames = [
             "bet9ja_away": 2.74,
             "roi": "0.48%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.610Z",
@@ -570,7 +570,7 @@ export const arbGames = [
             "bet9ja_away": 2.83,
             "roi": "2.12%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.610Z",
@@ -598,7 +598,7 @@ export const arbGames = [
             "bet9ja_away": 2.83,
             "roi": "4.87%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.610Z",
@@ -626,7 +626,7 @@ export const arbGames = [
             "bet9ja_away": 2.18,
             "roi": "1.54%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.611Z",
@@ -654,7 +654,7 @@ export const arbGames = [
             "bet9ja_away": 2.18,
             "roi": "8.82%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.611Z",
@@ -682,7 +682,7 @@ export const arbGames = [
             "bet9ja_away": 3.7,
             "roi": "0.96%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.612Z",
@@ -710,7 +710,7 @@ export const arbGames = [
             "naijabet_away": 2.02,
             "roi": "0.65%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.614Z",
@@ -738,7 +738,7 @@ export const arbGames = [
             "naijabet_away": 14.1,
             "roi": "6.46%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.617Z",
@@ -766,7 +766,7 @@ export const arbGames = [
             "bet9ja_away": 3.6,
             "roi": "4.48%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.618Z",
@@ -794,7 +794,7 @@ export const arbGames = [
             "bet9ja_away": 3.6,
             "roi": "4.67%"
         },
-        "showFullData": false,
+        "showfulldata": false,
         "sport": "Soccer",
         "market":"1X2",
         "arb_received": "2020-09-13T11:28:17.618Z",

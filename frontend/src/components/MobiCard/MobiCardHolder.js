@@ -16,7 +16,7 @@ class MobiCardHolder extends Component {
 		const { games } = this.state;
 		let clickedCard = games.map(game => {
 			if (game.id === idx) {
-				return { ...game, showFullData: !game.showFullData }
+				return { ...game, showfulldata: !game.showfulldata }
 			}
 			return game;
 		})
@@ -28,10 +28,10 @@ class MobiCardHolder extends Component {
 
 	changeActiveCard = (id) => {
 		const newCardState = this.clickCard(id)
-		const currentActiveCards = newCardState.filter(obj => obj.showFullData === true)
+		const currentActiveCards = newCardState.filter(obj => obj.showfulldata === true)
 		if (currentActiveCards.length > 1) {
 			let deactivateCard = currentActiveCards.filter(gameObj => gameObj.id !== id)
-			deactivateCard.forEach(item => item.showFullData = false)
+			deactivateCard.forEach(item => item.showfulldata = false)
 		}
 	}
 

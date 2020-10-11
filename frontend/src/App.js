@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import CardHolder from "./components/CardHolder/CardHolder";
 import MobiCardHolder from "./components/MobiCard/MobiCardHolder";
 import Footer from "./components/Footer/Footer";
-import { arbGames } from "./components/utils/arbs";
+//import { arbGames } from "./components/utils/arbs";
 import "./App.css";
 
 
@@ -13,8 +14,18 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      games: arbGames,
+      games: []
     }
+  }
+
+  componentDidMount = () => {
+    axios.get("http://localhost:4000/api/v0/arbs")
+      .then(response => {
+          console.log(response)
+      })
+      .catch(err => {
+        console.log("an error occurred in the componentDidMount API call", err)
+      })
   }
 
 

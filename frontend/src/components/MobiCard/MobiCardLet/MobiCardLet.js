@@ -4,13 +4,6 @@ import "./mobicardlet.css";
 
 class MobiCard extends Component {  
 
-	// constructor(props) {
-	// 	super(props)
-	// 	this.state = {
-	// 		arbsList: this.props.games
-	// 	}
-	// }
-
 	render() {
 
 		const { clickCard, games } = this.props
@@ -23,7 +16,7 @@ class MobiCard extends Component {
 							<p className="mobi_roi">{ game.arb_combination.roi }</p>
 							<p className="mobi_game">{ game.game }</p>
 						</div>
-						{ game.showFullData === false ? "" : <MobiCardFullData game={game}/> }
+						{ game.showfulldata === false ? "" : <MobiCardFullData game={game}/> }
 					</div>
 				)
 			})
