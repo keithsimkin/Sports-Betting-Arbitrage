@@ -12,6 +12,10 @@
 	grid-gap: 5px;
 }
 
+.searchbar {
+	visibility: hidden;
+}
+
 .navbar > div {
 	padding: 2px;
 }

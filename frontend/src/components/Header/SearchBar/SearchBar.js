@@ -3,16 +3,12 @@ import "./searchbar.css"
 
 class SearchBar extends Component {
 
-	searchChange = e => {
-		console.log(e.target.value)
-	}
-
 	render() {
 		return (
 			<div className="searchbox">
-				<input onChange={this.searchChange} className="search" type="search" name="" placeholder="Search arbs"/>
+				<input className="search" type="search" name="" placeholder="Search arbs"/>
 			</div>
-		)
+		) 
 	}
 }
 

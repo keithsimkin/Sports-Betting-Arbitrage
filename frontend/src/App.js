@@ -4,19 +4,28 @@ import Banner from "./components/Banner/Banner";
 import CardHolder from "./components/CardHolder/CardHolder";
 import MobiCardHolder from "./components/MobiCard/MobiCardHolder";
 import Footer from "./components/Footer/Footer";
+import { arbGames } from "./components/utils/arbs";
 import "./App.css";
-//import { arbGames } from "./components/utils/arbs";
+
 
 class App extends Component {
 
+  constructor(){
+    super()
+    this.state = {
+      games: arbGames,
+    }
+  }
+
+
   render() {
-    // const { arbGames } = this.state;
+    const { games } = this.state
      return (
         <div className="container">
           <Header />
           <Banner />
           <CardHolder/>
-          <MobiCardHolder />
+          <MobiCardHolder games={games}/>
           <Footer />
         </div>
     );

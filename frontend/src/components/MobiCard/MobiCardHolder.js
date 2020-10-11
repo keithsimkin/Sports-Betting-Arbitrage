@@ -1,18 +1,16 @@
 import React, { Component } from "react";
-//import InfiniteScroll from "react-infinite-scroller";
 import MobiCard from "./MobiCardLet/MobiCardLet";
-import { arbGames } from "../utils/arbs";
 import "./mobicard.css";
 
 class MobiCardHolder extends Component {
 
-	constructor() {
-		super()
+	constructor(props) {
+		super(props)
 		this.state = {
-			games: arbGames
+			games: this.props.games
 		}
 	}
-
+ 
 
 	clickCard = (idx) => {
 		const { games } = this.state;
