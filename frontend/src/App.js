@@ -5,18 +5,10 @@ import Banner from "./components/Banner/Banner";
 import CardHolder from "./components/CardHolder/CardHolder";
 import MobiCardHolder from "./components/MobiCard/MobiCardHolder";
 import Footer from "./components/Footer/Footer";
-import { arbGames } from "./components/utils/arbs";
 import "./App.css";
 
 
 class App extends Component {
-
-  constructor() {
-    super()
-    this.state = {
-      games: []
-    }
-  }
 
   getAllArbs = () => {
     
@@ -30,22 +22,14 @@ class App extends Component {
     //   })
   }
 
-  componentDidMount() {
-    this.setState({
-      games: arbGames
-    })
-  }
-
 
   render() {
-    const { games } = this.state
-    console.log(1, games)
      return (
         <div className="container">
           <Header />
           <Banner />
           <CardHolder/>
-          <MobiCardHolder games={games}/>
+          <MobiCardHolder/>
           <Footer />
         </div>
     );

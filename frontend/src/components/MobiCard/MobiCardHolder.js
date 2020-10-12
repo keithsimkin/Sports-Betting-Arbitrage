@@ -1,16 +1,22 @@
 import React, { Component } from "react";
 import MobiCard from "./MobiCardLet/MobiCardLet";
 import "./mobicard.css";
+import { arbGames } from "../utils/arbs";
 
 class MobiCardHolder extends Component {
 
-	constructor(props) {
-		super(props)
+	constructor() {
+		super()
 		this.state = {
-			games: this.props.games
+			games: []
 		}
 	}
- 
+
+	componentDidMount() {
+		this.setState({
+			games: arbGames
+		})
+	}
 
 	clickCard = (idx) => {
 		const { games } = this.state;
