@@ -5,7 +5,7 @@ export const arbGames = [
         "game_date": "12 August 2020",
         "game_time": "14:30",
         "arb_combination": {
-            "naijabet_home": 3.4,
+            "naijabet_home": 3.4, 
             "bet9ja_draw": 2.96,
             "bet9ja_away": 2.87,
             "roi": "1.96%"
