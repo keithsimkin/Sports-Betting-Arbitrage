@@ -10,19 +10,18 @@ class MobiCardHolder extends Component {
 		super()
 		this.state = {
 			games: [],
-			limit: 4
+			page: 1
 		}
 	}
 
 
-	getArbsList = () => {
-		const { limit } = this.state
-		axios.get(`http://localhost:4000/api/v0/arbs?limit=${limit}`)
+	getArbsList = (pageNum) => {
+		const { games } = this.state
+		axios.get(`http://localhost:4000/api/v0/arbs?page=${pageNum}&limit=6`)
 			.then(res => {
 				if (res.status === 200) {
-					let games = res.data
 					this.setState({
-						games
+						games: [...games, ...res.data.someArbs]
 					})
 				}
 			})
@@ -31,9 +30,21 @@ class MobiCardHolder extends Component {
 			})
 	}
 
+	infiniteScroll = () => {
+		if (window.innerHeight + window.scrollY > document.body.offsetHeight) {
+			let newPage = this.state.page;
+			newPage++
+			this.setState({
+				page: newPage
+			})
+			this.getArbsList(newPage)
+		}
+	}
 
 	componentDidMount() {
-		this.getArbsList()
+		const { page } = this.state
+		window.addEventListener("scroll", this.infiniteScroll)
+		this.getArbsList(page)
 	}
 
 	clickCard = (idx) => {
