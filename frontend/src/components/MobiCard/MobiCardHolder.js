@@ -14,19 +14,23 @@ class MobiCardHolder extends Component {
 		}
 	}
 
+
 	getArbsList = () => {
 		const { limit } = this.state
 		axios.get(`http://localhost:4000/api/v0/arbs?limit=${limit}`)
 			.then(res => {
 				if (res.status === 200) {
 					let games = res.data
-					this.setState({ games })
+					this.setState({
+						games
+					})
 				}
 			})
 			.catch(err => {
 				console.log("an error occurred in the componentDidMount API call in MobiCardHolder", err)
-		})
+			})
 	}
+
 
 	componentDidMount() {
 		this.getArbsList()
@@ -61,9 +65,12 @@ class MobiCardHolder extends Component {
 	}
 
 	render() {
+		const { games } = this.state;
 		return(
 			<section className="mobile_card_holder"> 
-				<MobiCard games={this.state.games} clickCard={id => this.clicksHandle(id)}/>
+			{
+				games.map(game => <MobiCard key={game.id} game={game} clickCard={id => this.clicksHandle(id)}/>)
+			}
 			</section>
 		) 
 	}
