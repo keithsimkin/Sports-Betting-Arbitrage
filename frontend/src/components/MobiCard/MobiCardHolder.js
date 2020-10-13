@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from 'axios';
 import MobiCard from "./MobiCardLet/MobiCardLet";
 import "./mobicard.css";
-// import { arbGames } from "../utils/arbs";
 
 class MobiCardHolder extends Component {
 
