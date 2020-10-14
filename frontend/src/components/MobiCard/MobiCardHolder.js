@@ -30,7 +30,7 @@ class MobiCardHolder extends Component {
 	}
 
 	infiniteScroll = () => {
-		if (window.innerHeight + window.scrollY > document.body.offsetHeight) {
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 			let newPage = this.state.page;
 			newPage++
 			this.setState({
