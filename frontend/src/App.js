@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from "./components/Header/Header";
 import HomePage from "./components/Homepage/HomePage";
-//import SignIn from "./components/Homepage/SignIn";
+import SignIn from "./components/Homepage/SignIn";
 //import SignUp from "./components/Homepage/SignUp";
 import Banner from "./components/Banner/Banner";
 import CardHolder from "./components/CardHolder/CardHolder";
@@ -31,6 +31,8 @@ class App extends Component {
       switch(param) {
         case "index":
           return (<HomePage onRouteChange={route => this.onRouteChange(route)}/>)
+        case "signin":
+          return (<SignIn onRouteChange={route => this.onRouteChange(route)}/>)
         case "home":
           return (<div>
                     <Header />

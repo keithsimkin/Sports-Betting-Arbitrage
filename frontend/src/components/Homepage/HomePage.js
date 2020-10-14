@@ -14,7 +14,7 @@ const HomePage = ({ onRouteChange }) => {
 				<p>Join Playbook today.</p>
 				<div>	
 					<div>Sign up</div>
-					<div onClick={() => onRouteChange('home')}>Log in</div>
+					<div onClick={() => onRouteChange('signin')}>Log in</div>
 				</div>
 			</div>
 			<div>

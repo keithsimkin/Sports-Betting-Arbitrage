@@ -1,7 +1,7 @@
 import React from "react";
 import { FaSnowflake } from "react-icons/fa";
 
-const SignIn = () => {
+const SignIn = ({ onRouteChange }) => {
 	return(
 		<div>
 			<div>
@@ -15,7 +15,7 @@ const SignIn = () => {
 				<input type="password" name="password" placeholder="password"/>
 			</div>
 			<div>
-				<div>Log in</div>
+				<div onClick={() => onRouteChange('home')}>Log in</div>
 			</div>
 			<div>
 				<p>Forgot password?</p>
