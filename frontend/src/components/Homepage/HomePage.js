@@ -1,7 +1,7 @@
 import React from "react";
 import { FaSnowflake } from "react-icons/fa";
 
-const HomePage = () => {
+const HomePage = ({ onRouteChange }) => {
 	return(
 		<div>
 			<div>
@@ -14,7 +14,7 @@ const HomePage = () => {
 				<p>Join Playbook today.</p>
 				<div>	
 					<div>Sign up</div>
-					<div>Log in</div>
+					<div onClick={() => onRouteChange('home')}>Log in</div>
 				</div>
 			</div>
 			<div>
