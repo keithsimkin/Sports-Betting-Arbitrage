@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from "./components/Header/Header";
-import HomePage from "./components/Homepage/HomePage";
-import SignIn from "./components/Homepage/SignIn";
-import SignUp from "./components/Homepage/SignUp";
+import HomePage from "./components/Routes/HomePage";
+import SignIn from "./components/Routes/SignIn";
+import SignUp from "./components/Routes/SignUp";
 import Banner from "./components/Banner/Banner";
 import CardHolder from "./components/CardHolder/CardHolder";
 import MobiCardHolder from "./components/MobiCard/MobiCardHolder";
