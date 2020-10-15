@@ -8,7 +8,7 @@ const SignIn = ({ onRouteChange }) => {
 				<FaSnowflake className="arb_logo"/>
 			</div>
 			<div>
-				<p>Log in to Playbook</p>
+				<p>Log in to Mockbe</p>
 			</div>
 			<div>
 				<input type="text" name="username" placeholder="email"/>
@@ -19,7 +19,7 @@ const SignIn = ({ onRouteChange }) => {
 			</div>
 			<div>
 				<p>Forgot password?</p>
-				<p>Sign up for Playbook</p>
+				<p onClick={() => onRouteChange('signup')}>Sign up for Mockbe</p>
 			</div>
 		</div>
 	)

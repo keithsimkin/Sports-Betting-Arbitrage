@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from "./components/Header/Header";
 import HomePage from "./components/Homepage/HomePage";
 import SignIn from "./components/Homepage/SignIn";
-//import SignUp from "./components/Homepage/SignUp";
+import SignUp from "./components/Homepage/SignUp";
 import Banner from "./components/Banner/Banner";
 import CardHolder from "./components/CardHolder/CardHolder";
 import MobiCardHolder from "./components/MobiCard/MobiCardHolder";
@@ -33,6 +33,8 @@ class App extends Component {
           return (<HomePage onRouteChange={route => this.onRouteChange(route)}/>)
         case "signin":
           return (<SignIn onRouteChange={route => this.onRouteChange(route)}/>)
+        case "signup":
+          return (<SignUp onRouteChange={route => this.onRouteChange(route)}/>)
         case "home":
           return (<div>
                     <Header />
