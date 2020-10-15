@@ -7,7 +7,7 @@ const HomePage = ({ onRouteChange }) => {
 		<div className="homepage-container">
 			<div className="homepage-uppersection">
 				<div>
-					<FaSnowflake className="arb_logo_homepage"/>
+					<FaSnowflake className="arb_logo_routes"/>
 				</div>
 				<div className="homepage-text">
 					<p>Make money from sports like the stock market</p>

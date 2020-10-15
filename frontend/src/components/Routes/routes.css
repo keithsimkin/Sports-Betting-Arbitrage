@@ -2,7 +2,7 @@
 	padding: 15px;
 }
 
-.arb_logo_homepage {
+.arb_logo_routes {
 	font-size: 30px;
 }
 
@@ -32,4 +32,41 @@
 .homepage-container .homepage-signup-button {
 	background-color: grey;
 	color: #fff;
+}
+
+.siginin-container {
+	margin: 20px;
+	text-align: center;
+}
+
+.siginin-container .signin-text {
+	margin-top: 20px;
+}
+
+.siginin-container .signin-text p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.siginin-container .siginin-input input {
+	border: none;
+	width: 100%;
+	height: 60px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid grey;
+	border-radius: 0px;
+	background-color: #F0F0F0;
+	font-size: 18px;
+}
+
+.siginin-container .signin-login-button {
+	border: 1px solid grey;
+	margin-bottom: 13px;
+	padding: 12px;
+	text-align: center;
+	border-radius: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	color: #fff;
+	background-color: grey;
 }

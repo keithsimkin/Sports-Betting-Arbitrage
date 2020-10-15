@@ -4,19 +4,19 @@ import "./routes.css"
 
 const SignIn = ({ onRouteChange }) => {
 	return(
-		<div>
+		<div className="siginin-container">
 			<div>
-				<FaSnowflake className="arb_logo"/>
+				<FaSnowflake className="arb_logo_routes"/>
 			</div>
-			<div>
+			<div className="signin-text">
 				<p>Log in to Mockbe</p>
 			</div>
-			<div>
+			<div className="siginin-input">
 				<input type="text" name="username" placeholder="email"/>
 				<input type="password" name="password" placeholder="password"/>
 			</div>
 			<div>
-				<div onClick={() => onRouteChange('home')}>Log in</div>
+				<div className="signin-login-button" onClick={() => onRouteChange('home')}>Log in</div>
 			</div>
 			<div>
 				<p>Forgot password?</p>
