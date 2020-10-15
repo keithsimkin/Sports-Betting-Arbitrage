@@ -3,14 +3,14 @@ import { FaSnowflake } from "react-icons/fa";
 
 const SignUp = ({ onRouteChange }) => {
 	return(
-		<div>
+		<div className="signup-container">
 			<div>
-				<FaSnowflake className="arb_logo"/>
+				<FaSnowflake className="arb_logo_routes"/>
 			</div>
-			<div>
+			<div className="signup-text">
 				<p>Sign up to invest in sports like the stock market</p>
 			</div>
-			<div>
+			<div className="signup-input">
 				<input type="email" name="email" placeholder="Email"/>
 				<input type="text" name="first-name" placeholder="First Name"/>
 				<input type="text" name="last-name" placeholder="Last Name"/>

@@ -16,7 +16,7 @@ class App extends Component {
     super()
     this.state = {
       // route: 'index',
-      route: 'signin'
+      route: 'signup'
     }
   }
 

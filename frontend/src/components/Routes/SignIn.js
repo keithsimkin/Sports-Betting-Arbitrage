@@ -4,14 +4,14 @@ import "./routes.css"
 
 const SignIn = ({ onRouteChange }) => {
 	return(
-		<div className="siginin-container">
+		<div className="signin-container">
 			<div>
 				<FaSnowflake className="arb_logo_routes"/>
 			</div>
 			<div className="signin-text">
 				<p>Log in to Mockbe</p>
 			</div>
-			<div className="siginin-input">
+			<div className="signin-input">
 				<input type="text" name="username" placeholder="email"/>
 				<input type="password" name="password" placeholder="password"/>
 			</div>
