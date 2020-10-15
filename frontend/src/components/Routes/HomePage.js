@@ -20,9 +20,6 @@ const HomePage = ({ onRouteChange }) => {
 					</div>
 				</div>
 			</div>
-			<div>
-				image
-			</div>
 		</div>
 	)
 }
