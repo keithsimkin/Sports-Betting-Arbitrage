@@ -14,10 +14,11 @@ import "./App.css";
 class App extends Component {
 
   constructor(){
-    super()
+    super() 
     this.state = {
       // route: 'index'
-      route: 'autoarb'
+      route: 'autoarb',
+      bookieselection:[]
     }
   }
 
@@ -27,8 +28,14 @@ class App extends Component {
     })
   }
 
+  selectedBookies = (value) => {
+    this.setState({
+      bookieselection: value
+    })
+  }
+
   render() {
-    const { route } = this.state;
+    const { route, bookieselection } = this.state;
     const renderSwitch = (param) => {
       switch(param) {
         case "index":
@@ -38,13 +45,13 @@ class App extends Component {
         case "signup":
           return (<SignUp onRouteChange={route => this.onRouteChange(route)}/>)
         case "autoarb":
-          return (<AutoArbRegister onRouteChange={route => this.onRouteChange(route)}/>)
+          return (<AutoArbRegister bookieList={this.selectedBookies} onRouteChange={route => this.onRouteChange(route)}/>)
         case "home":
           return (<div>
                     <Header />
                     <Banner />
                     <CardHolder/>
-                    <MobiCardHolder/>
+                    <MobiCardHolder />
                     <Footer /> 
                   </div>)
           default :

@@ -99,7 +99,7 @@ class AutoArbModal extends Component {
 						</div>
 					</div>
 				</CSSTransition>,
-				document.getElementById("root")
+				document.getElementById("root") 
 		)
 	}
 	

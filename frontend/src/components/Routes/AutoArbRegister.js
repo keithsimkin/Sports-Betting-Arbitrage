@@ -5,8 +5,8 @@ import "./routes.css"
 
 class AutoArbRegister extends Component {
 
-	constructor() {
-		super()
+	constructor(props) {
+		super(props)
 		this.state = {
 			bookieSelection: []
 		}
@@ -31,8 +31,13 @@ class AutoArbRegister extends Component {
 		console.log('working')
 	}
 
+	signInWithAutoArb = () => {
+		this.props.onRouteChange("home")
+		this.props.bookieList(this.state.bookieSelection)
+		//console.log(this.state.bookieSelection) //send this the backend
+	}
+
 	render() {
-		console.log(this.state.bookieSelection)
 		const { onRouteChange } = this.props
 		return(
 			<div className="autoarb-container">
@@ -89,7 +94,7 @@ class AutoArbRegister extends Component {
 					</div>
 				</div>
 				<div className="autoarb-buttons">
-					<div className="autoarb-signin-button" onClick={() => onRouteChange('home')}>Sign in</div>
+					<div className="autoarb-signin-button" onClick={this.signInWithAutoArb}>Sign in</div>
 					<div className="autoarb-cancel-button" onClick={() => onRouteChange('home')}>Cancel</div>
 				</div>
 			</div>
