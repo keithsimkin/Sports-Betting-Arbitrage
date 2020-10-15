@@ -18,7 +18,7 @@ const SignUp = ({ onRouteChange }) => {
 				<input type="password" name="password" placeholder="Password"/>
 			</div>
 			<div>
-				<div className="signup-button" onClick={() => onRouteChange('home')}>Sign up</div>
+				<div className="signup-button" onClick={() => onRouteChange('autoarb')}>Sign up</div>
 			</div>
 		</div>
 	)

@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import HomePage from "./components/Routes/HomePage";
 import SignIn from "./components/Routes/SignIn";
 import SignUp from "./components/Routes/SignUp";
+import AutoArbRegister from "./components/Routes/AutoArbRegister"
 import Banner from "./components/Banner/Banner";
 import CardHolder from "./components/CardHolder/CardHolder";
 import MobiCardHolder from "./components/MobiCard/MobiCardHolder";
@@ -15,7 +16,8 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      route: 'index'
+      // route: 'index'
+      route: 'autoarb'
     }
   }
 
@@ -35,6 +37,8 @@ class App extends Component {
           return (<SignIn onRouteChange={route => this.onRouteChange(route)}/>)
         case "signup":
           return (<SignUp onRouteChange={route => this.onRouteChange(route)}/>)
+        case "autoarb":
+          return (<AutoArbRegister onRouteChange={route => this.onRouteChange(route)}/>)
         case "home":
           return (<div>
                     <Header />
