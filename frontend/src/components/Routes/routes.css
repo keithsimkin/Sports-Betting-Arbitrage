@@ -55,7 +55,7 @@
 	margin-bottom: 10px;
 	border-bottom: 2px solid grey;
 	border-radius: 0px;
-	background-color: #F0F0F0;
+	background-color: #F5F5F5;
 	font-size: 18px;
 }
 
@@ -69,4 +69,15 @@
 	margin-top: 10px;
 	color: #fff;
 	background-color: grey;
+}
+
+.siginin-container .signin-footer {
+	display: flex;
+	justify-content: center;
+}
+
+.siginin-container .signin-footer p {
+	font-size: 13px;
+	width: 100%;
+	color: grey;
 }
