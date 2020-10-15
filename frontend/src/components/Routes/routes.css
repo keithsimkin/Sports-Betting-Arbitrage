@@ -1,0 +1,35 @@
+.homepage-uppersection {
+	padding: 15px;
+}
+
+.arb_logo_homepage {
+	font-size: 30px;
+}
+
+.homepage-text {
+	margin-bottom: 50px;
+}
+
+.homepage-text p {
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.homepage-container .homepage-smalltext {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.homepage-container .homepage-buttons div {
+	border: 1px solid grey;
+	margin-bottom: 13px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.homepage-container .homepage-signup-button {
+	background-color: grey;
+	color: #fff;
+}
