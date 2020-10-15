@@ -20,7 +20,7 @@
 	font-size: 12px;
 }
 
-.homepage-container .homepage-buttons div {
+.homepage-container .homepage-buttons div, .autoarb-container .autoarb-buttons div {
 	border: 1px solid grey;
 	margin-bottom: 13px;
 	padding: 10px;
@@ -69,7 +69,7 @@
 	font-size: 18px;
 }
 
-.signin-container .signin-login-button, .signup-container .signup-button {
+.signin-container .signin-login-button, .signup-container .signup-button, .autoarb-container .autoarb-signin-button {
 	border: 1px solid grey;
 	margin-bottom: 13px;
 	padding: 12px;
@@ -101,4 +101,17 @@
 	border-radius: 0px;
 	background-color: #F5F5F5;
 	font-size: 16px;
+}
+
+.autoarb-container {
+	margin: 18px;
+}
+
+.autoarb-container h5 {
+	margin-bottom: 2px;
+}
+
+.autoarb-container .bookmakers {
+	padding-top: 2px;
+	margin-bottom: 15px;
 }
