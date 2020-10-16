@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BookieLoginModal from "./BookieLoginModal/BookieLoginModal";
 import { FaSnowflake } from "react-icons/fa";
 import "./routes.css"
 
@@ -8,14 +9,19 @@ class AutoArbRegister extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			bookieSelection: []
+			bookieSelection: [],
+			isSelected: false,
+			bookiename: ""
 		}
 	}
 
 	getSelectedBookie = e => {
 		const { bookieSelection } = this.state
 		if (e.target.checked === true) {
-			this.setState({
+			//show a modal to accept all details before setting state to capture the data
+			this.setState({ 
+				isSelected: true,
+				bookiename: e.target.value,
 				bookieSelection: [...bookieSelection, e.target.name]
 			})
 		} else {
@@ -25,10 +31,6 @@ class AutoArbRegister extends Component {
 				}
 			})
 		}
-	}
-
-	bookieLoginModal = () => {
-		console.log('working')
 	}
 
 	signInWithAutoArb = () => {
@@ -45,6 +47,7 @@ class AutoArbRegister extends Component {
 
 	render() {
 		const { onRouteChange } = this.props
+		const { isSelected, bookiename } = this.state
 		return(
 			<div className="autoarb-container">
 				<div>
@@ -56,9 +59,10 @@ class AutoArbRegister extends Component {
 				</div>
 				<div>
 					<h5>Select bookmakers where you have an account</h5>
+					{ isSelected ? <BookieLoginModal bookiename={bookiename}/> : "" }
 					<div className="bookmakers">
 						<div>
-							<input onClick={this.bookieLoginModal} onChange={this.getSelectedBookie} type="checkbox" name="bet9ja" id="bet9ja" value="Bet9ja"/>
+							<input onChange={this.getSelectedBookie} type="checkbox" name="bet9ja" id="bet9ja" value="Bet9ja"/>
 							<label htmlFor="bet9ja">Bet9ja</label>
 						</div>
 						<div>
