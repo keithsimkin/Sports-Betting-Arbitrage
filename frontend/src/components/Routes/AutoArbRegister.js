@@ -11,7 +11,7 @@ class AutoArbRegister extends Component {
 		this.state = {
 			bookieSelection: [],
 			isSelected: false,
-			bookiename: ""
+			bookiename: "",
 		}
 	}
 
@@ -22,7 +22,7 @@ class AutoArbRegister extends Component {
 			this.setState({ 
 				isSelected: true,
 				bookiename: e.target.value,
-				bookieSelection: [...bookieSelection, e.target.name]
+				bookieSelection: [...bookieSelection, e.target.name],
 			})
 		} else {
 			bookieSelection.forEach(item => {
@@ -46,9 +46,12 @@ class AutoArbRegister extends Component {
 	}
 
 	closeBookieLoginModalWithoutData = () => {
+		const { bookiename } = this.state;
 		this.setState({
 			isSelected: false
 		})
+		let currentlySelected = document.querySelector(`input[value=${bookiename}]`)
+		currentlySelected.click()
 	}
 
 	render() {

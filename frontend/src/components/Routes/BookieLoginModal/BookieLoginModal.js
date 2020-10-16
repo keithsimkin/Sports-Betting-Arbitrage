@@ -1,7 +1,7 @@
 import React from "react";
 import "./bookielogin.css"
 
-const BookieLoginModal = ({ bookiename, isSelected }) => {
+const BookieLoginModal = ({ bookiename, isSelected, onClose }) => {
 	if (!isSelected) {
 		return null
 	}
@@ -13,7 +13,7 @@ const BookieLoginModal = ({ bookiename, isSelected }) => {
 					<input type="password" name={`${bookiename}-password`} placeholder={`${bookiename} Password`}/>
 					<div className="bookie-login-modal-buttons">
 						<button className="b1">OK</button> 
-						<button className="b2">Cancel</button>
+						<button className="b2" onClick={onClose}>Cancel</button>
 					</div>
 				</div>
 			</div>
