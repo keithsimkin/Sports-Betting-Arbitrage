@@ -17,8 +17,8 @@ class App extends Component {
   constructor(){
     super() 
     this.state = {
-      route: 'index',
-      // route: 'home',
+      // route: 'index',
+      route: 'autoarb',
       bookieselection:[]
     }
   }

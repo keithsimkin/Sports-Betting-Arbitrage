@@ -32,9 +32,15 @@ class AutoArbRegister extends Component {
 	}
 
 	signInWithAutoArb = () => {
-		this.props.onRouteChange("home")
-		this.props.bookieList(this.state.bookieSelection)
-		//console.log(this.state.bookieSelection) //send this the backend
+		const { bookieSelection } = this.state
+		if (bookieSelection.length >= 2) {
+			this.props.onRouteChange("home")
+			this.props.bookieList(bookieSelection)
+			//(bookieSelection) //send this the backend
+		} else {
+			alert('Please select at least 2 bookmakers, or click the cancel button below.')
+		}
+		
 	}
 
 	render() {
