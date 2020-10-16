@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SelectionProvider } from "./context/AutoArbSelectionContext";
 import Header from "./components/Header/Header";
 import HomePage from "./components/Routes/HomePage";
 import SignIn from "./components/Routes/SignIn";
@@ -16,8 +17,8 @@ class App extends Component {
   constructor(){
     super() 
     this.state = {
-      // route: 'index'
-      route: 'autoarb',
+      route: 'index',
+      // route: 'home',
       bookieselection:[]
     }
   }
@@ -60,9 +61,11 @@ class App extends Component {
     }
 
      return (
-        <div className="container">
-          { renderSwitch(route) }
-        </div>
+        <SelectionProvider value={bookieselection}>
+          <div className="container">
+            { renderSwitch(route) }
+          </div>
+        </SelectionProvider>
     );
   } 
 

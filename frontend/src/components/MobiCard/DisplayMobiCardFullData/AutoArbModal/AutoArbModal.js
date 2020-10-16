@@ -1,9 +1,12 @@
 import React,  { Component } from "react";
 import ReactDOM from 'react-dom';
 import { CSSTransition } from "react-transition-group";
+import SelectionContext from "../../../../context/AutoArbSelectionContext";
 import "./autoarbmodal.css";
 
 class AutoArbModal extends Component {
+
+	static contextType = SelectionContext
 
 	constructor(props){
 		super(props) 
@@ -38,9 +41,8 @@ class AutoArbModal extends Component {
 		}
 	}
 
-
-
 	render() {
+		const bookieselection = this.context
 		const { showAutoArbModal, closeAutoArbModal, oddsA, oddsB, oddsC, gameName, roi } = this.props;
 		return ReactDOM.createPortal(
 				<CSSTransition
@@ -93,7 +95,7 @@ class AutoArbModal extends Component {
 								</div>
 							</div>
 							<div className="modal-footer">
-								<button className="modal-button arb">Arb</button>
+								{ bookieselection.length === 0 ? "" : <button className="modal-button arb">Arb</button> }
 								<button className="modal-button close" onClick={closeAutoArbModal}>Close</button>
 							</div>
 						</div>
@@ -102,7 +104,7 @@ class AutoArbModal extends Component {
 				document.getElementById("root") 
 		)
 	}
-	
+	 
 };
 
 export default AutoArbModal;

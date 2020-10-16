@@ -81,7 +81,7 @@ class MobiCardHolder extends Component {
 			{
 				games.map(game => <MobiCard key={game.id} game={game} clickCard={id => this.clicksHandle(id)}/>)
 			}
-			</section>
+			</section> 
 		) 
 	}
 }
