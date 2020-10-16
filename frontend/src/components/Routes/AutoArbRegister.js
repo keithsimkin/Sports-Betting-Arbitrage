@@ -45,6 +45,12 @@ class AutoArbRegister extends Component {
 		
 	}
 
+	closeBookieLoginModalWithoutData = () => {
+		this.setState({
+			isSelected: false
+		})
+	}
+
 	render() {
 		const { onRouteChange } = this.props
 		const { isSelected, bookiename } = this.state
@@ -59,7 +65,11 @@ class AutoArbRegister extends Component {
 				</div>
 				<div>
 					<h5>Select bookmakers where you have an account</h5>
-					{ isSelected ? <BookieLoginModal bookiename={bookiename}/> : "" }
+					<BookieLoginModal 
+						onClose={this.closeBookieLoginModalWithoutData} 
+						isSelected={isSelected} 
+						bookiename={bookiename}
+					/>
 					<div className="bookmakers">
 						<div>
 							<input onChange={this.getSelectedBookie} type="checkbox" name="bet9ja" id="bet9ja" value="Bet9ja"/>
