@@ -13,7 +13,7 @@ class AutoArbRegister extends Component {
 			isSelected: false,
 			bookiename: "",
 		}
-	}
+	} 
 
 	getSelectedBookie = e => {
 		const { bookieSelection } = this.state
@@ -68,7 +68,7 @@ class AutoArbRegister extends Component {
 				<div>
 					<h5>Select bookmakers where you have an account</h5>
 					<BookieLoginModal 
-						onClose={this.closeBookieLoginModalWithoutData} 
+						noSelection={this.closeBookieLoginModalWithoutData} 
 						isSelected={isSelected} 
 						bookiename={bookiename}
 					/>

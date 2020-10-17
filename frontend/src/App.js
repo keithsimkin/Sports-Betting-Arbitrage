@@ -35,7 +35,7 @@ class App extends Component {
       bookieselection: value
     })
   }
-
+ 
   render() {
     const { route, bookieselection } = this.state;
     const renderSwitch = (param) => {
