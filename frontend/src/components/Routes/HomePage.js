@@ -3,7 +3,7 @@ import { FaSnowflake } from "react-icons/fa";
 import "./routes.css";
 
 const HomePage = ({ onRouteChange }) => {
-	return(
+	return( 
 		<div className="homepage-container">
 			<div className="homepage-uppersection">
 				<div>

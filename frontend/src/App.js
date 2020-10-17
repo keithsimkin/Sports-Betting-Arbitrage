@@ -9,6 +9,7 @@ import Banner from "./components/Banner/Banner";
 //import CardHolder from "./components/CardHolder/CardHolder";
 import MobiCardHolder from "./components/MobiCard/MobiCardHolder";
 import Footer from "./components/Footer/Footer";
+import ComingSoon from "./components/ComingSoon/ComingSoon";
 import "./App.css";
 
 
@@ -45,6 +46,8 @@ class App extends Component {
           return (<SignIn onRouteChange={route => this.onRouteChange(route)}/>)
         case "signup":
           return (<SignUp onRouteChange={route => this.onRouteChange(route)}/>)
+        case "comingsoon":
+          return (<ComingSoon onRouteChange={route => this.onRouteChange(route)}/>)
         case "autoarb":
           return (<AutoArbRegister bookieList={this.selectedBookies} onRouteChange={route => this.onRouteChange(route)}/>)
         case "home":
@@ -54,7 +57,7 @@ class App extends Component {
                     {//<CardHolder/>
                     }
                     <MobiCardHolder />
-                    <Footer /> 
+                    <Footer onRouteChange={route => this.onRouteChange(route)}/> 
                   </div>)
           default :
             return null

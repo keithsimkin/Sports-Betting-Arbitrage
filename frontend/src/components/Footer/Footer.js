@@ -5,8 +5,8 @@ import "./footer.css"
 
 class Footer extends Component {
 
-	constructor() {
-		super()
+	constructor(props) {
+		super(props)
 		this.state = {
 			iconstate: [{id:1, active: true},{id:2, active: false},{id:3, active: false}]
 		}
@@ -36,8 +36,10 @@ class Footer extends Component {
 	}
 
 	handleIconStates = (id) => {
+		const { onRouteChange } = this.props
 		this.changeIconClass(id)
 		this.updateIcons(id)
+		onRouteChange("comingsoon")
 	}
 
 	handleHomeButton = (id) => {
@@ -45,6 +47,7 @@ class Footer extends Component {
 		this.updateIcons(id)
 		window.scrollTo(0, 0)
 	}
+
 
 	render() {
 		const { iconstate } = this.state;
