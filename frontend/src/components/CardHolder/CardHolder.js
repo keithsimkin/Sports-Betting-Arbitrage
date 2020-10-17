@@ -3,6 +3,7 @@ import Card from "./Card/Card";
 import "./cardholder.css";
 
 class CardHolder extends Component {
+
 	constructor() {
 		super()
 		this.state = {
@@ -15,7 +16,7 @@ class CardHolder extends Component {
 		arbScroll.style.cssText = `position: ${loc}; top:52.9px; z-index:10;`
 	}
 
-	componentDidMount = () => {
+	componentDidMount() {
 		document.addEventListener("scroll", e => {
 			const newScrollPosition = window.scrollY > 250 ? this.changeArbScroll("sticky") : this.changeArbScroll("");
 			this.setState({

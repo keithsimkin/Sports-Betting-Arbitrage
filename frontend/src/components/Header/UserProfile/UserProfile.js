@@ -1,11 +1,13 @@
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
+//import { FaUserCircle } from "react-icons/fa";
 import "./userprofile.css"
 
-const UserProfile = () => {
+const UserProfile = ({ onRouteChange }) => {
 	return (
-		<div className="user-profile">
-			<FaUserCircle className="profile-icon"/>
+		<div onClick={() => onRouteChange('signin')} className="user-profile">
+			{//<FaUserCircle className="profile-icon"/> 
+		}
+			Sign out
 		</div>
 	)
 }

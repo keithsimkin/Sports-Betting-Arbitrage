@@ -18,7 +18,6 @@ class AutoArbRegister extends Component {
 	getSelectedBookie = e => {
 		const { bookieSelection } = this.state
 		if (e.target.checked === true) {
-			//show a modal to accept all details before setting state to capture the data
 			this.setState({ 
 				isSelected: true,
 				bookiename: e.target.value,
@@ -103,11 +102,11 @@ class AutoArbRegister extends Component {
 							<label htmlFor="betwinner">Betwinner</label>
 						</div>
 						<div>
-							<input onChange={this.getSelectedBookie} type="checkbox" name="22bet" id="22bet" value="22Bet"/>
+							<input onChange={this.getSelectedBookie} type="checkbox" name="22bet" id="22bet" value="TwentyTwoBet"/>
 							<label htmlFor="22bet">22bet</label>
 						</div>
 						<div>
-							<input onChange={this.getSelectedBookie} type="checkbox" name="1xbet" id="1xbet" value="1xBet"/>
+							<input onChange={this.getSelectedBookie} type="checkbox" name="1xbet" id="1xbet" value="OnexBet"/>
 							<label htmlFor="1xbet">1XBet</label>
 						</div>
 						<div>

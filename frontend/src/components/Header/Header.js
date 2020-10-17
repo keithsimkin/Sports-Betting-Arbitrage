@@ -4,7 +4,7 @@ import UserProfile from "./UserProfile/UserProfile";
 import Logo from "./Logo/Logo";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ onRouteChange }) => {
 	return (
 			<header className="top_header">
 		        <nav className="navbar">
@@ -15,7 +15,7 @@ const Header = () => {
 		          	<SearchBar />
 		          </div>  
 		          <div className="user">
-		          	<UserProfile />
+		          	<UserProfile onRouteChange={onRouteChange}/>
 		          </div>
 		        </nav>
 	      	</header>
