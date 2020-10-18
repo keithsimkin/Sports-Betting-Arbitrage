@@ -3,6 +3,7 @@ import axios from 'axios';
 import MobiCard from "./MobiCardLet/MobiCardLet";
 import "./mobicard.css";
 
+
 class MobiCardHolder extends Component {
 
 	constructor() {
@@ -13,9 +14,9 @@ class MobiCardHolder extends Component {
 		}
 	}
 
-
 	getArbsList = (pageNum) => {
 		const { games } = this.state
+		//const abortController = new AbortController() { signal: abortController.signal }
 		axios.get(`http://localhost:4000/api/v0/arbs?page=${pageNum}&limit=6`)
 			.then(res => {
 				if (res.status === 200) {
@@ -44,6 +45,10 @@ class MobiCardHolder extends Component {
 		const { page } = this.state
 		window.addEventListener("scroll", this.infiniteScroll)
 		this.getArbsList(page)
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener("scroll", this.infiniteScroll)
 	}
 
 	clickCard = (idx) => {
