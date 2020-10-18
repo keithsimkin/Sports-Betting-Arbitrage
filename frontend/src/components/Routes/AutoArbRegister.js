@@ -65,7 +65,7 @@ class AutoArbRegister extends Component {
 					<FaSnowflake className="arb_logo_routes"/>
 				</div>
 				<div>
-					<h3><i>Auto-arb</i>: an autopilot feature</h3>
+					<h3><i>Auto-arb</i> : an autopilot feature</h3>
 					<p>Simply enter the bet amount. The auto-arb feature automatically logs into your betting accounts and places the bets</p>
 				</div>
 				<div>
