@@ -95,7 +95,7 @@ class AutoArbModal extends Component {
 								</div>
 							</div>
 							<div className="modal-footer">
-								{ bookieselection.length === 0 ? "" : <button className="modal-button arb">Arb</button> }
+								{ bookieselection.length === 0 ? "" : <button className="modal-button arb">auto-arb</button> }
 								<button className="modal-button close" onClick={closeAutoArbModal}>Close</button>
 							</div>
 						</div>

@@ -118,7 +118,7 @@ class MobiCardFullData extends Component {
 						</table>
 						{ showGameData(uniqueBookies.size) }
 						<div id="auto_arb">
-						 	<button onClick={this.changeAutoArbModalState}>auto-arb</button>
+						 	<button onClick={this.changeAutoArbModalState}>stake split</button>
 						 	<AutoArbModal  
 						 		oddsA={`${bookieNames[0]} @ ${bookieOdds[0]}`}
 						 		oddsB={`${bookieNames[1]} @ ${bookieOdds[1]}`} 
