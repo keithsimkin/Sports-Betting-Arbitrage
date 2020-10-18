@@ -2,7 +2,7 @@ import React from "react";
 import { FaSnowflake } from "react-icons/fa";
 import "./routes.css"
 
-const SignIn = ({ onRouteChange }) => {
+const SignIn = ({ onRouteChange }) => { 
 	return(
 		<div className="signin-container">
 			<div>
