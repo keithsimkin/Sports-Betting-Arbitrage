@@ -16,7 +16,6 @@ class MobiCardHolder extends Component {
 
 	getArbsList = (pageNum) => {
 		const { games } = this.state
-		//const abortController = new AbortController() { signal: abortController.signal }
 		axios.get(`http://localhost:4000/api/v0/arbs?page=${pageNum}&limit=6`)
 			.then(res => {
 				if (res.status === 200) {
