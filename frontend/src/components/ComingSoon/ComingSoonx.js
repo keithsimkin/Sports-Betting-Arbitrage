@@ -2,7 +2,7 @@ import React from 'react';
 import { FaSnowflake } from "react-icons/fa";
 import "./coming.css"
 
-const ComingSoon = ({ onRouteChange }) => {
+const ComingSoonx = ({ onRouteChange }) => {
 	return(
 		<div className="comingsoon-container">
 			<div>
@@ -10,10 +10,10 @@ const ComingSoon = ({ onRouteChange }) => {
 			</div>
 			<div>
 				<h3>This page is under construction</h3>
-				<button onClick={() => onRouteChange("home")}>Back</button>
+				<button onClick={() => onRouteChange("signin")}>Back</button>
 			</div>
 		</div>
 	)
 } 
 
-export default ComingSoon;
+export default ComingSoonx;
