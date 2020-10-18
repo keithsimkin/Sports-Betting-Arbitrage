@@ -9,7 +9,7 @@ const ComingSoonx = ({ onRouteChange }) => {
 				<FaSnowflake className="arb_logo_routes"/>
 			</div>
 			<div>
-				<h3>This page is under construction</h3>
+				<h3>This page is coming soon</h3>
 				<button onClick={() => onRouteChange("signin")}>Back</button>
 			</div>
 		</div>
