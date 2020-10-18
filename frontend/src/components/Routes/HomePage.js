@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSnowflake } from "react-icons/fa";
+import logo from "../../media/images/invest.png";
 import "./routes.css";
 
 const HomePage = ({ onRouteChange }) => {
@@ -17,6 +18,9 @@ const HomePage = ({ onRouteChange }) => {
 					<div className="homepage-buttons">	
 						<div className="homepage-signup-button" onClick={() => onRouteChange('signup')}>Sign up</div>
 						<div className="homepage-login-button" onClick={() => onRouteChange('signin')}>Log in</div>
+					</div>
+					<div className="homepage-image">
+						<img src={logo} alt=""/>
 					</div>
 				</div>
 			</div>
