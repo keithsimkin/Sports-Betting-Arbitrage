@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../../media/images/invest.png";
 import "./banner.css"
 
 const Banner = () => {
 	return(
 		<section className="banner">
-			Banner
+			<img src={logo} alt=""/>
 		</section>
 	)
 };
