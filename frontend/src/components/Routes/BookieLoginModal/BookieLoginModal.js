@@ -6,13 +6,16 @@ class BookieLoginModal extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
+			bookie:"",
 			bookieusername:"",
-			bookiepassword:""
+			bookiepassword:"",
+			bookieList:[]
 		}
 	}
 
 	getBookieUsername = e => {
 		this.setState({
+			bookie: e.target.name.split("-")[0],
 			bookieusername: e.target.value
 		})
 	}
@@ -24,13 +27,27 @@ class BookieLoginModal extends Component {
 	}
 
 	getBookieDetails = () => {
-		const { bookieusername, bookiepassword } = this.state 
-		let bookieDetails = [bookieusername, bookiepassword]
-		if (bookieDetails.includes("")) {
-			alert("Please enter the bookie username and password, or click the cancel button")
-		} else {
-			console.log(bookieDetails)
-		}
+		const { bookie, bookieusername, bookiepassword } = this.state 
+		const { withSelection, noSelection } = this.props
+		let bookieDetails = [bookie, bookieusername, bookiepassword]
+		withSelection()
+		this.setState({
+			bookieList:[...this.state.bookieList, bookieDetails]
+		}, () => {
+			const { bookieList } = this.state
+			let oldState = bookieList[bookieList["length"] - 1]
+			let newState = bookieList[bookieList["length"] - 2]
+			if ((bookieList.length >= 2) && (oldState[0] === newState[0])) {
+				alert('Please enter details for the bookie before clicking the OK button, or click the cancel button')
+				noSelection()
+			} else if ((bookieList.length === 1) && (bookieList[0].includes(""))) {
+				alert('Please enter details for the bookie before clicking the OK button, or click the cancel button')
+				noSelection()
+			} else {
+				let onlySelected = bookieList.filter(arr => !(arr.includes("")))
+				this.props.userSelectedBookies(onlySelected)
+			}
+		})
 	}
 
 

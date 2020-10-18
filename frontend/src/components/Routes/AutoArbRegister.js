@@ -16,32 +16,29 @@ class AutoArbRegister extends Component {
 	} 
 
 	getSelectedBookie = e => {
-		const { bookieSelection } = this.state
 		if (e.target.checked === true) {
 			this.setState({ 
 				isSelected: true,
-				bookiename: e.target.value,
-				bookieSelection: [...bookieSelection, e.target.name],
+				bookiename: e.target.value
 			})
-		} else {
-			bookieSelection.forEach(item => {
-				if (item === e.target.name) {
-					bookieSelection.splice(bookieSelection.indexOf(e.target.name), 1)
-				}
-			})
-		}
+		} 
+	}
+
+	allSelectedBookies = (value) => {
+		this.setState({
+			bookieSelection: value
+		})
 	}
 
 	signInWithAutoArb = () => {
 		const { bookieSelection } = this.state
-		if (bookieSelection.length >= 2) {
+		if (bookieSelection.length < 2) {
+			alert('Please select at least 2 bookmakers, or click the cancel button below.')
+		} else {
 			this.props.onRouteChange("home")
 			this.props.bookieList(bookieSelection)
 			//(bookieSelection) //send this the backend
-		} else {
-			alert('Please select at least 2 bookmakers, or click the cancel button below.')
 		}
-		
 	}
 
 	closeBookieLoginModalWithoutData = () => {
@@ -51,6 +48,12 @@ class AutoArbRegister extends Component {
 		})
 		let currentlySelected = document.querySelector(`input[value=${bookiename}]`)
 		currentlySelected.click()
+	}
+
+	closeBookieLoginModalWithData = () => {
+		this.setState({
+			isSelected: false
+		})
 	}
 
 	render() {
@@ -69,8 +72,10 @@ class AutoArbRegister extends Component {
 					<h5>Select bookmakers where you have an account</h5>
 					<BookieLoginModal 
 						noSelection={this.closeBookieLoginModalWithoutData} 
+						withSelection={this.closeBookieLoginModalWithData}
 						isSelected={isSelected} 
 						bookiename={bookiename}
+						userSelectedBookies={this.allSelectedBookies}
 					/>
 					<div className="bookmakers">
 						<div>
