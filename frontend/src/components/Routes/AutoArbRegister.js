@@ -37,7 +37,7 @@ class AutoArbRegister extends Component {
 		} else {
 			this.props.onRouteChange("home")
 			this.props.bookieList(bookieSelection)
-			//(bookieSelection) //send this the backend
+			//(bookieSelection) //send this the backend in a post request
 		}
 	}
 

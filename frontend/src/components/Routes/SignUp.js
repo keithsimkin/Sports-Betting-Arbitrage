@@ -3,8 +3,8 @@ import { FaSnowflake } from "react-icons/fa";
 
 class SignUp extends Component {
 
-	constructor() {
-		super()
+	constructor(props) {
+		super(props)
 		this.state = {
 			signUpEmail:"",
 			signUpFirstName:"",
@@ -45,11 +45,11 @@ class SignUp extends Component {
 	}
 
 	onSubmitSignup = () => {
+		//this.props.onRouteChange('autoarb')
 		console.log(this.state)
 	}
 
 	render() {
-		const { onRouteChange } = this.props
 		return(
 			<div className="signup-container">
 				<div>
@@ -66,7 +66,7 @@ class SignUp extends Component {
 					<input onChange={this.getSignupPassword} type="password" name="password" placeholder="Password"/>
 				</div>
 				<div>
-					<div className="signup-button" onClick={() => onRouteChange('autoarb')}>Sign up</div>
+					<div className="signup-button" onClick={this.onSubmitSignup}>Sign up</div>
 				</div>
 			</div>
 		)
