@@ -45,8 +45,8 @@ class SignUp extends Component {
 	}
 
 	onSubmitSignup = () => {
-		//this.props.onRouteChange('autoarb')
-		console.log(this.state)
+		this.props.onRouteChange('autoarb')
+		//console.log(this.state) send with JSON.stringify in a post request
 	}
 
 	render() {
