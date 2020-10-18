@@ -19,7 +19,7 @@ const SignIn = ({ onRouteChange }) => {
 				<div className="signin-login-button" onClick={() => onRouteChange('home')}>Log in</div>
 			</div>
 			<div className="signin-footer">
-				<p>Forgot password?</p> 
+				<p onClick={() => onRouteChange('comingsoon')}>Forgot password?</p> 
 				<p onClick={() => onRouteChange('signup')}>Sign up for Mockbe</p>
 			</div>
 		</div>
