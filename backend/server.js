@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const scrapeDataAndGetArbs = require("./controllers/v0/dbops");
+const { createDBTables }  = require("./controllers/v0/root/models/createTables");
 const { IndexRouter } = require("./controllers/v0/index.router");
 
 const server = express();
@@ -11,16 +11,6 @@ const PORT = process.env.PORT || 4000;
 
 server.use(bodyParser.json());
 server.use('/api/v0/', IndexRouter);
-
-
-//https://medium.com/@devinjaystokes/using-proxycannon-ng-to-create-unlimited-rotating-proxies-fccffa70a728
-//getThreewayArbs().then(res => console.log(res.rows[0]))
-//
-//getThreewayArbs().then(console.log)
-//checkArbs().then(console.log)
-
-//the function to initiate table creation and scraper should be an IFFE that runs
-//continuously
 
 
 
