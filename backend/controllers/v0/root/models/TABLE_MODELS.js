@@ -43,7 +43,7 @@ async function naijabet3WayOddsTable() {
 		}
 	})
 }
-
+module.exports.naijabet3WayOddsTable = naijabet3WayOddsTable;
 // //doublechance table models
 async function bet9jaDoubleChanceOddsTable() {
 	return await db.schema.hasTable('bet9ja_doublechance').then(exists => {

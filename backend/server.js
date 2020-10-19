@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 4000;
 server.use(bodyParser.json());
 server.use('/api/v0/', IndexRouter);
 
-
+//createDBTables().then(console.log).catch(err => console.log(err))
 
 server.get('/', (req, res) => {
 	res.send('/api/v0')
