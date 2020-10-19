@@ -85,6 +85,7 @@ async function naijabetDoubleChanceOddsTable() {
 		}
 	})
 }
+module.exports.naijabetDoubleChanceOddsTable = naijabetDoubleChanceOddsTable;
 
 // //Handicaps
 // //Over or Under 2.5
@@ -106,6 +107,7 @@ async function bet9jaOU25OddsTable() {
 		}
 	})
 }
+module.exports.bet9jaOU25OddsTable = bet9jaOU25OddsTable;
 
 
 
