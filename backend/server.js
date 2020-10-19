@@ -14,7 +14,7 @@ const { IndexRouter } = require("./controllers/v0/index.router");
 	const server = express();
 	const PORT = process.env.PORT || 4000;
 
-	server.use(bodyParser.json());
+	server.use(bodyParser.json()); 
 
 	server.use('/api/v0/', IndexRouter);
 
