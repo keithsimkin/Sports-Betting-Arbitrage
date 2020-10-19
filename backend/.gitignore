@@ -1,9 +1,9 @@
 .env
 /node_modules
 /database
-controllers/v0/scrapers/bet9ja/bet9ja.js
-controllers/v0/scrapers/naijabet/naijabet.js
-controllers/v0/scrapers/betking/betking.js
+controllers/scrapers/bet9ja/bet9ja.js
+controllers/scrapers/naijabet/naijabet.js
+controllers/scrapers/betking/betking.js
 controllers/v0/utils
 controllers/v0/dbops.js
 /config/config.js
@@ -11,4 +11,4 @@ controllers/v0/users/models
 controllers/v0/users/routes/user.auth.js
 controllers/v0/users/routes/user.router.js
 controllers/v0/arbs/routes/arbs.router.js
-controllers/v0/root/models/ROOT_DB_TABLES_MODEL.js
+controllers/v0/root/models/TABLE_MODELS.js
