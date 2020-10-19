@@ -65,6 +65,8 @@ async function bet9jaDoubleChanceOddsTable() {
 	})
 }
 
+module.exports.bet9jaDoubleChanceOddsTable = bet9jaDoubleChanceOddsTable;
+
 async function naijabetDoubleChanceOddsTable() {
 	return await db.schema.hasTable('naijabet_doublechance').then(exists => {
 		if (!exists) {
