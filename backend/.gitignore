@@ -11,3 +11,4 @@ controllers/v0/users/routes/user.router.js
 controllers/v0/arbs/routes/arbs.router.js
 controllers/v0/root/models/TABLE_MODELS.js
 controllers/v0/root/models/createTables.js
+controllers/v0/bookieLogins
