@@ -6,8 +6,7 @@ controllers/v0/dbops/dbops.js
 controllers/v0/dbops/getAllarbs.js
 /config/config.js
 controllers/v0/users/models
-controllers/v0/users/routes/user.auth.js
-controllers/v0/users/routes/user.router.js
+controllers/v0/users/routes
 controllers/v0/arbs/routes/arbs.router.js
 controllers/v0/root/models/TABLE_MODELS.js
 controllers/v0/root/models/createTables.js
