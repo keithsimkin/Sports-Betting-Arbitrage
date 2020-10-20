@@ -13,5 +13,5 @@ const dba = knex({
 		database: c.database
 	}
 })
-
+ 
 module.exports = dba;  
