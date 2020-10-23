@@ -13,7 +13,7 @@ class AutoArbModal extends Component {
 		this.state = {
 			odds1: "",
 			odds2:"",
-			odds3:"",
+			odds3:"", 
 			oddsA: this.props.oddsA,
 			oddsB: this.props.oddsB,
 			oddsC: this.props.oddsC
