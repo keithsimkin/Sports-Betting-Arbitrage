@@ -24,3 +24,4 @@ yarn-error.log*
 /src/components/Routes/SignIn.js
 /src/components/Routes/SignUp.js
 /src/context
+/src/App.js
