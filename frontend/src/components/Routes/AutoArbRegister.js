@@ -8,11 +8,11 @@ class AutoArbRegister extends Component {
 
 	constructor(props) {
 		super(props)
-		this.state = {
+		this.state = { 
 			bookieSelection: [],
 			isSelected: false,
-			bookiename: "",
-		}
+			bookiename: ""
+		} 
 	} 
 
 	getSelectedBookie = e => {
@@ -37,7 +37,7 @@ class AutoArbRegister extends Component {
 		} else {
 			this.props.onRouteChange("home")
 			this.props.bookieList(bookieSelection)
-			//(bookieSelection) //send this the backend in a post request 
+			console.log(bookieSelection) //send this the backend in a post request 
 		}
 	}
 

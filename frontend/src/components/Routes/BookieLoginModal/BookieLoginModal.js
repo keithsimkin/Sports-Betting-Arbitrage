@@ -9,7 +9,7 @@ class BookieLoginModal extends Component {
 			bookie:"",
 			bookieusername:"",
 			bookiepassword:"",
-			bookieList:[]
+			bookieList:[] 
 		}
 	}
 
@@ -25,7 +25,7 @@ class BookieLoginModal extends Component {
 			bookiepassword: e.target.value
 		})
 	}
-
+ 
 	getBookieDetails = () => {
 		const { bookie, bookieusername, bookiepassword } = this.state 
 		const { withSelection, noSelection } = this.props

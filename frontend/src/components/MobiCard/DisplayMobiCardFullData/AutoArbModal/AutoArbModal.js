@@ -1,7 +1,7 @@
 import React,  { Component } from "react";
 import ReactDOM from 'react-dom';
 import { CSSTransition } from "react-transition-group";
-import SelectionContext from "../../../../context/AutoArbSelectionContext";
+import SelectionContext from "../../../../context/AllContexts";
 import "./autoarbmodal.css";
 
 class AutoArbModal extends Component {
@@ -18,7 +18,7 @@ class AutoArbModal extends Component {
 			oddsB: this.props.oddsB,
 			oddsC: this.props.oddsC
 		}
-	}
+	} 
 
 	inputChange = e => {
 		const re = /^[0-9\b]+$/
