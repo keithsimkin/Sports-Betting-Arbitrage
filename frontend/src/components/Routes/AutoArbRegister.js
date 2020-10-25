@@ -38,6 +38,7 @@ class AutoArbRegister extends Component {
 			this.props.onRouteChange("home")
 			this.props.bookieList(bookieSelection)
 			console.log(bookieSelection) //send this the backend in a post request 
+			//extract userid from cookie
 		}
 	}
 
