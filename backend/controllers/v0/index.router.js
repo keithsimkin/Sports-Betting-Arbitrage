@@ -6,10 +6,12 @@ const router = express.Router();
 const { ArbsRouter } = require("./arbs/routes/arbs.router");
 const { RootRouter } = require("./root/routes/root.router");
 const { AuthRouter } = require("./users/routes/auth.router");
+const { BookieRouter } = require("./bookie_logins/routes/logins.router");
 
 router.use('/', RootRouter);
 router.use('/arbs', ArbsRouter); 
 router.use('/users', AuthRouter);
+router.use('/bookies', BookieRouter);
 
 
 router.get('/', (req, res) => { 

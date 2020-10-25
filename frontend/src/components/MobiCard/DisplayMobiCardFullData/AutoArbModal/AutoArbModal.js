@@ -8,7 +8,7 @@ class AutoArbModal extends Component {
 
 	static contextType = SelectionContext
 
-	constructor(props){
+	constructor(props){ 
 		super(props) 
 		this.state = {
 			odds1: "",
@@ -38,7 +38,15 @@ class AutoArbModal extends Component {
 				odds2: stakeAmountSplit[1],
 				odds3: stakeAmountSplit[2]
 			})
+			
 		}
+	}
+
+	autoArb = () => {
+		const { oddsA, oddsB, oddsC, odds1, odds2, odds3 } = this.state
+		let oddsData = [oddsA, oddsB, oddsC]
+		let odds = [odds1, odds2, odds3]
+		console.log(oddsData, odds)
 	}
 
 	render() {
@@ -95,7 +103,7 @@ class AutoArbModal extends Component {
 								</div>
 							</div>
 							<div className="modal-footer">
-								{ bookieselection.length === 0 ? "" : <button className="modal-button arb">auto-arb</button> }
+								{ bookieselection.length === 0 ? "" : <button onClick={this.autoArb} className="modal-button arb">auto-arb</button> }
 								<button className="modal-button close" onClick={closeAutoArbModal}>Close</button>
 							</div>
 						</div>
