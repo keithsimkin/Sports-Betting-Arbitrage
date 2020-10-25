@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios';
 import BookieLoginModal from "./BookieLoginModal/BookieLoginModal";
 import { FaSnowflake } from "react-icons/fa";
 import "./routes.css"
@@ -11,7 +12,8 @@ class AutoArbRegister extends Component {
 		this.state = { 
 			bookieSelection: [],
 			isSelected: false,
-			bookiename: ""
+			bookiename: "",
+			userid: ""
 		} 
 	} 
 
@@ -30,15 +32,21 @@ class AutoArbRegister extends Component {
 		})
 	}
 
-	signInWithAutoArb = () => {
+	signInWithAutoArb = async () => {
 		const { bookieSelection } = this.state
 		if (bookieSelection.length < 2) {
 			alert('Please select at least 2 bookmakers, or click the cancel button below.')
 		} else {
-			this.props.onRouteChange("home")
-			this.props.bookieList(bookieSelection)
-			console.log(bookieSelection) //send this the backend in a post request 
-			//extract userid from cookie
+			this.props.bookieList(bookieSelection) 
+			let uid = localStorage.getItem("userid")
+			let res = await axios.post("/api/v0/users/userbookiesregister", {
+				bookies: bookieSelection,
+				userid: uid
+			})
+			if ((res.status === 200) && (res.data.auth === true)) {
+				//this.props.onRouteChange("home")
+				localStorage.removeItem("userid")
+			}
 		}
 	}
 
