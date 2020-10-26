@@ -12,6 +12,7 @@ class MobiCardFullData extends Component {
 	}
 
 	changeAutoArbModalState = () => {
+		console.log('the stake split button was clicked')
 		this.setState({ 
 			showModal: !this.state.showModal
 		})
