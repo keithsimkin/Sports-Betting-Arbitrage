@@ -26,3 +26,4 @@ yarn-error.log*
 /src/components/Routes/AutoArbRegister.js
 /src/context
 /src/App.js
+/src/components/MobiCard
