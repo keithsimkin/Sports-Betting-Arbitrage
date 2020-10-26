@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FaHome, FaBars, FaBolt } from "react-icons/fa";
-
+import history from "../Routes/History";
 import "./footer.css"
 
 class Footer extends Component {
@@ -36,10 +36,9 @@ class Footer extends Component {
 	}
 
 	handleIconStates = (id) => {
-		const { onRouteChange } = this.props
 		this.changeIconClass(id)
 		this.updateIcons(id)
-		onRouteChange("comingsoon")
+		history.push("comingsoon")
 	}
 
 	handleHomeButton = (id) => {
