@@ -13,7 +13,7 @@ class AutoArbModal extends Component {
 			stake3:"", 
 			oddsA: this.props.oddsA,
 			oddsB: this.props.oddsB,
-			oddsC: this.props.oddsC
+			oddsC: this.props.oddsC 
 		}
 	} 
 
@@ -39,6 +39,15 @@ class AutoArbModal extends Component {
 		}
 	}
 
+	closeAutoArbModalWithoutPlacingArb = () => {
+		this.props.closeAutoArbModal()
+		this.setState({
+			stake1: "",
+			stake2:"",
+			stake3:""
+		})
+	}
+
 	autoArb = () => {
 		const { oddsA, oddsB, oddsC, stake1, stake2, stake3 } = this.state
 		let bookiesAndOdds = [oddsA, oddsB, oddsC]
@@ -47,7 +56,7 @@ class AutoArbModal extends Component {
 	}
 
 	render() {
-		const { showAutoArbModal, closeAutoArbModal, oddsA, oddsB, oddsC, gameName, roi, autoarbregister } = this.props;
+		const { showAutoArbModal, oddsA, oddsB, oddsC, gameName, roi, autoarbregister } = this.props;
 		const { stake1, stake2, stake3 } = this.state;
 		return ReactDOM.createPortal(
 				<CSSTransition
@@ -55,10 +64,10 @@ class AutoArbModal extends Component {
 					unmountOnExit
 					timeout={{
 						enter: 0,
-						exit: 300
+						exit: 300 
 					}}
 				>
-					<div className={`modal ${showAutoArbModal ? "show": ""}`} onClick={closeAutoArbModal}>
+					<div className={`modal ${showAutoArbModal ? "show": ""}`} onClick={this.closeAutoArbModalWithoutPlacingArb}>
 						<div className="modal-content" onClick={e => e.stopPropagation()}>
 							<div className="modal-header">
 								<p className="modal-title">{ `${roi} | ${gameName}` }</p>
@@ -101,7 +110,7 @@ class AutoArbModal extends Component {
 							</div>
 							<div className="modal-footer">
 								{ autoarbregister ? <button onClick={this.autoArb} className="modal-button arb">auto-arb</button> : "" }
-								<button className="modal-button close" onClick={closeAutoArbModal}>Close</button>
+								<button className="modal-button close" onClick={this.closeAutoArbModalWithoutPlacingArb}>Close</button>
 							</div>
 						</div>
 					</div>

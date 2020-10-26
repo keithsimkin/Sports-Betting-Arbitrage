@@ -18,7 +18,7 @@ class MobiCardFullData extends Component {
 			this.setState({ 
 				showModal: !this.state.showModal,
 				autoarbregister: true
-			})
+			}) 
 		} else {
 			this.setState({ 
 				showModal: !this.state.showModal
