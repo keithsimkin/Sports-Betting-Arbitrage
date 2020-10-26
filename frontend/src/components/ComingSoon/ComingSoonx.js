@@ -1,8 +1,9 @@
 import React from 'react';
 import { FaSnowflake } from "react-icons/fa";
+import history from "../Routes/History";
 import "./coming.css"
 
-const ComingSoonx = ({ onRouteChange }) => {
+const ComingSoonx = () => {
 	return(
 		<div className="comingsoon-container">
 			<div>
@@ -10,7 +11,7 @@ const ComingSoonx = ({ onRouteChange }) => {
 			</div>
 			<div>
 				<h3>This page is coming soon</h3>
-				<button onClick={() => onRouteChange("signin")}>Back</button>
+				<button onClick={() => history.push("/signin")}>Back</button>
 			</div>
 		</div>
 	)
