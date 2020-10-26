@@ -7,15 +7,23 @@ class MobiCardFullData extends Component {
 	constructor() {
 		super()
 		this.state = {
-			showModal: false
+			showModal: false,
+			autoarbregister: false,
 		}
-	}
+	} 
 
 	changeAutoArbModalState = () => {
-		console.log('the stake split button was clicked')
-		// this.setState({ 
-		// 	showModal: !this.state.showModal
-		// })
+		let uid = localStorage.getItem('userid')
+		if(uid) {
+			this.setState({ 
+				showModal: !this.state.showModal,
+				autoarbregister: true
+			})
+		} else {
+			this.setState({ 
+				showModal: !this.state.showModal
+			})
+		}
 	}
 
 	render() {
@@ -128,6 +136,7 @@ class MobiCardFullData extends Component {
 						 		roi={game.arb_combination.roi} 
 						 		closeAutoArbModal={this.changeAutoArbModalState} 
 						 		showAutoArbModal={this.state.showModal}
+						 		autoarbregister={this.state.autoarbregister}
 						 	/>
 						 </div>
 									

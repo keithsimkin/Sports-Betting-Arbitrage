@@ -7,8 +7,8 @@ class AutoArbModal extends Component {
 
 	constructor(props){ 
 		super(props) 
-		this.state = {
-			stake1: "",
+		this.state = { 
+			stake1: "", 
 			stake2:"",
 			stake3:"", 
 			oddsA: this.props.oddsA,
@@ -47,7 +47,7 @@ class AutoArbModal extends Component {
 	}
 
 	render() {
-		const { showAutoArbModal, closeAutoArbModal, oddsA, oddsB, oddsC, gameName, roi } = this.props;
+		const { showAutoArbModal, closeAutoArbModal, oddsA, oddsB, oddsC, gameName, roi, autoarbregister } = this.props;
 		const { stake1, stake2, stake3 } = this.state;
 		return ReactDOM.createPortal(
 				<CSSTransition
@@ -100,7 +100,7 @@ class AutoArbModal extends Component {
 								</div>
 							</div>
 							<div className="modal-footer">
-								<button onClick={this.autoArb} className="modal-button arb">auto-arb</button>
+								{ autoarbregister ? <button onClick={this.autoArb} className="modal-button arb">auto-arb</button> : "" }
 								<button className="modal-button close" onClick={closeAutoArbModal}>Close</button>
 							</div>
 						</div>
