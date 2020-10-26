@@ -137,6 +137,7 @@ class MobiCardFullData extends Component {
 						 		closeAutoArbModal={this.changeAutoArbModalState} 
 						 		showAutoArbModal={this.state.showModal}
 						 		autoarbregister={this.state.autoarbregister}
+						 		gameObj={game}
 						 	/>
 						 </div>
 									

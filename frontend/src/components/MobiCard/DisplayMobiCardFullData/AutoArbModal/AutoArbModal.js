@@ -1,5 +1,6 @@
 import React,  { Component } from "react";
 import ReactDOM from 'react-dom';
+import axios from "axios";
 import { CSSTransition } from "react-transition-group";
 import "./autoarbmodal.css";
 
@@ -13,7 +14,8 @@ class AutoArbModal extends Component {
 			stake3:"", 
 			oddsA: this.props.oddsA,
 			oddsB: this.props.oddsB,
-			oddsC: this.props.oddsC 
+			oddsC: this.props.oddsC, 
+			game: this.props.gameObj
 		}
 	} 
 
@@ -48,11 +50,20 @@ class AutoArbModal extends Component {
 		})
 	}
 
-	autoArb = () => {
-		const { oddsA, oddsB, oddsC, stake1, stake2, stake3 } = this.state
+	autoArb = async () => {
+		const { oddsA, oddsB, oddsC, stake1, stake2, stake3, game } = this.state
 		let bookiesAndOdds = [oddsA, oddsB, oddsC]
 		let stakeSplit = [stake1, stake2, stake3]
-		console.log('a', bookiesAndOdds, 'b', stakeSplit)
+		let data = {
+			gamedata: game,
+			bookiesAndOdds: bookiesAndOdds,
+			stakeSplit: stakeSplit
+		}
+		if (stake1 === "") {
+			alert("Please enter the amount to stake for this arb")
+		} else {
+			let resp = await axios.post("/api/v0/bookies/logins", data)
+		}
 	}
 
 	render() {
