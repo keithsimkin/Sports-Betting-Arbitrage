@@ -23,6 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 /src/components/Routes/SignIn.js
 /src/components/Routes/SignUp.js
+/src/components/Routes/HomePage.js
 /src/components/Routes/AutoArbRegister.js
 /src/context
 /src/App.js
