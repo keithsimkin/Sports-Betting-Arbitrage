@@ -1,13 +1,16 @@
 "use strict";
 
 const express = require("express");
+const csrf = require('csurf');
+const csrfProtection = csrf({ cookie: true });
 const router = express.Router();
-const db = require("../../../../knex");
+//const db = require("../../../../knex");
 
+router.use(csrfProtection);
 
 
 router.get('/', (req, res) => {
-	res.status(200).send('this is the path to the root home page')
+	res.send({ csrfToken: req.csrfToken() })
 }); 
 
-exports.RootRouter = router;
+exports.RootRouter = router;   

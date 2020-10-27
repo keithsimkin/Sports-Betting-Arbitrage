@@ -15,7 +15,7 @@ router.use('/bookies', BookieRouter);
 
 
 router.get('/', (req, res) => { 
-	res.send('v0');
+	res.send('v0'); 
 });
 
 router.post('/', (req, res) => {
