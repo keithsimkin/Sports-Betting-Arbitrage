@@ -9,7 +9,7 @@ import ComingSoon from "../ComingSoon/ComingSoon";
 import ComingSoonx from "../ComingSoon/ComingSoonx";
 import AutoArbRegister from "./AutoArbRegister";
 import UserPage from "./UserPage";
-
+ 
 const Routes = () => {
 	return(
 		<Router history={history}>
