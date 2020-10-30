@@ -10,4 +10,4 @@ router.get('/', csrfProtection, (req, res) => {
 	res.send({ csrfToken: req.csrfToken() })
 }); 
 
-exports.RootRouter = router;    
+exports.RootRouter = router;      
