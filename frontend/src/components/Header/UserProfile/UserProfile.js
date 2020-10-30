@@ -4,8 +4,12 @@ import history from "../../Routes/History";
 import "./userprofile.css"
 
 const UserProfile = () => {
+	const logout = () => {
+		history.push('/signin')
+		sessionStorage.removeItem("userid")
+	}
 	return (
-		<div onClick={() => history.push('/signin')} className="user-profile">
+		<div onClick={logout} className="user-profile">
 			{//<FaUserCircle className="profile-icon"/> 
 		}
 			Sign out
