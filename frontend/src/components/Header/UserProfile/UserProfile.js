@@ -7,6 +7,7 @@ const UserProfile = () => {
 	const logout = () => {
 		history.push('/signin')
 		sessionStorage.removeItem("userid")
+		sessionStorage.removeItem("bookieSelection")
 	}
 	return (
 		<div onClick={logout} className="user-profile">
