@@ -22,7 +22,8 @@ const PORT = process.env.PORT || 4002;
 	  }
 
 	let resp = naijabetArber(data)
-	//console.log(resp)
+	resp.then(console.log)
+
 	server.get('/', (req, res) => {
 		res.status(200).send('naijabet server')
 	})
