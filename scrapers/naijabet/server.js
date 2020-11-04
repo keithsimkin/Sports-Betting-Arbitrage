@@ -8,17 +8,19 @@ const PORT = process.env.PORT || 4002;
 (async () => {
 
 	let data = {
-	    stake: '421.1',
+	    stake: '550',
 	    book: 'naijabet',
-	    odd: 2.7,
+	    odd: 3.74,
 	    market: '1X2',
 	    sport: 'Soccer',
-	    country: 'South Africa ',
-	    league: 'National First Division',
-	    game: 'TS Sporting vs Moroka Swallows FC',
-	    marketType: 'away',
-	    username: 'naijabetluthor',
-	    password: 'naijabetluthor'
+	    country: 'Germany',
+	    league: 'Bundesliga',
+	    game: 'FC Augsburg vs Hertha BSC',
+	    marketType: 'draw',
+	    username: 'icepaigez',
+	    password: 'win!freD@j0ju'
+	    // username: 'test',
+	    // password: 'test'
 	  }
 
 	let resp = naijabetArber(data)
